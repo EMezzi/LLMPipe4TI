@@ -1,0 +1,59 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "NEODYMIUM",
+                "description": "Neodymium is an activity group that conducted a campaign in May 2016 and has heavily targeted Turkish victims",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2016-4117",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2017-8759",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ]
+        ]
+    }
+}

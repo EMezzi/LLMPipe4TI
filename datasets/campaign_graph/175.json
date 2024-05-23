@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "Operation_Armageddon_Final.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Gamaredon Group",
+                "date_start": "2013-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Gamaredon Group",
+                "description": "Gamaredon Group is a threat group that has been active since at least 2013 and has targeted individuals likely involved in the Ukrainian government",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "keep calm and (don_u2019t) enable macros_ a new threat actor targets uae dissidents - the citizen lab.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Stealth Falcon",
+                "date_start": "2015-11",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Stealth Falcon",
+                "description": "Stealth Falcon is a threat group that has conducted targeted spyware attacks against Emirati journalists, activists, and dissidents since at least 2012",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

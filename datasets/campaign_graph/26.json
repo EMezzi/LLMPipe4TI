@@ -1,0 +1,77 @@
+{
+    "pdf_title": [
+        "eps processing zero-days exploited by multiple threat actors _ fireeye inc.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT28",
+                "date_start": "2017-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT28",
+                "description": "APT 28 is a threat group that has been attributed to Russia’s Main Intelligence Directorate of the Russian General Staff",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0263",
+                "baseScore": "7.8",
+                "publishedDate": "2017-05",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0262",
+                "baseScore": "7.8",
+                "publishedDate": "2017-05",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

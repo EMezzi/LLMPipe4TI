@@ -1,0 +1,54 @@
+{
+    "pdf_title": [
+        "new insights into energetic bear_u2019s cyber attacks on turkish critical infrastructure.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Dragonfly",
+                "date_start": "2017-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Dragonfly",
+                "description": "Dragonfly is a cyberespionage group that has been active since at least 2011. They initially targeted defense and aviation companies but shifted to focus on the energy sector in early 2013",
+                "labels": "crime-syndicate",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

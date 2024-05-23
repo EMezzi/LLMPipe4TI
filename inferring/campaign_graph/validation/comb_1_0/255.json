@@ -1,0 +1,112 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Patchwork"
+                ],
+                "date_start": [
+                    "2017-12",
+                    "2017-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Patchwork"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spear-phishing Emails",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Website Redirects",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Direct Links",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Malicious Attachments",
+                "id": "attack_vector4"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2012-1856",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2014-4114",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2017-8570",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "CVE-2015-1641",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ]
+        ]
+    }
+}

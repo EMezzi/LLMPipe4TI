@@ -1,0 +1,81 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "APT37",
+                    "ScarCruft"
+                ],
+                "date_start": [
+                    "2016-03"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "APT37",
+                    "ScarCruft"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2016-4117",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2016-0147",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2016-4171",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

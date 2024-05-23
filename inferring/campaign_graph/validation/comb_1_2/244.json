@@ -1,0 +1,67 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "OilRig group",
+                    "OilRig"
+                ],
+                "date_start": [
+                    "2016-05",
+                    "2017-07",
+                    "2017-08"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "OilRig group",
+                    "OilRig"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spear-phishing email",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "exploit of CVE-2017-0199",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

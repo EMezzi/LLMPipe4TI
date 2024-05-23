@@ -1,0 +1,160 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "remote server",
+                "id": "server1"
+            },
+            {
+                "name": "different server",
+                "id": "server2"
+            },
+            {
+                "name": "backup server",
+                "id": "server3"
+            },
+            {
+                "name": "domain joined systems",
+                "id": "server4"
+            }
+        ],
+        "victim": [],
+        "related file": [
+            {
+                "name": "Cobalt Strike beacon",
+                "id": "file1"
+            },
+            {
+                "name": "Invoke-ShareFinder",
+                "id": "file2"
+            },
+            {
+                "name": "Rclone application",
+                "id": "file3"
+            },
+            {
+                "name": "MEGA cloud storage service",
+                "id": "file4"
+            },
+            {
+                "name": "RDP",
+                "id": "file5"
+            },
+            {
+                "name": "taskmanager GUI",
+                "id": "file6"
+            },
+            {
+                "name": "AnyDesk remote desktop application",
+                "id": "file7"
+            },
+            {
+                "name": "ProcessHacker",
+                "id": "file8"
+            },
+            {
+                "name": "Conti ransomware",
+                "id": "file9"
+            },
+            {
+                "name": "batch script",
+                "id": "file10"
+            }
+        ],
+        "threat actor": [
+            {
+                "name": "Conti ransomware threat actor",
+                "id": "actor1"
+            }
+        ],
+        "tool": [
+            {
+                "name": "Cobalt Strike beacon",
+                "id": "tool1"
+            },
+            {
+                "name": "Invoke-ShareFinder",
+                "id": "tool2"
+            },
+            {
+                "name": "Rclone application",
+                "id": "tool3"
+            },
+            {
+                "name": "MEGA cloud storage service",
+                "id": "tool4"
+            },
+            {
+                "name": "RDP",
+                "id": "tool5"
+            },
+            {
+                "name": "taskmanager GUI",
+                "id": "tool6"
+            },
+            {
+                "name": "AnyDesk remote desktop application",
+                "id": "tool7"
+            },
+            {
+                "name": "ProcessHacker",
+                "id": "tool8"
+            },
+            {
+                "name": "batch script",
+                "id": "tool9"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "RDP vulnerability",
+                "id": "vuln1"
+            },
+            {
+                "name": "LSASS process vulnerability",
+                "id": "vuln2"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "server1, connection, Cobalt Strike beacon": "file1"
+        },
+        {
+            "server1, connection, Invoke-ShareFinder": "file2"
+        },
+        {
+            "server1, connection, Rclone application": "file3"
+        },
+        {
+            "server2, connection, Rclone application": "file3"
+        },
+        {
+            "server2, connection, MEGA cloud storage service": "file4"
+        },
+        {
+            "server3, connection, RDP": "file5"
+        },
+        {
+            "server3, connection, taskmanager GUI": "file6"
+        },
+        {
+            "server4, connection, AnyDesk remote desktop application": "file7"
+        },
+        {
+            "server4, connection, ProcessHacker": "file8"
+        },
+        {
+            "server4, connection, Conti ransomware": "file9"
+        },
+        {
+            "server4, connection, batch script": "file10"
+        },
+        {
+            "server4, connection, RDP vulnerability": "vuln1"
+        },
+        {
+            "server4, connection, LSASS process vulnerability": "vuln2"
+        }
+    ]
+}

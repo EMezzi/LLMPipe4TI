@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "xenotime _ dragos.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "TEMP.Veles",
+                "date_start": "2018-10",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "TEMP.Veles",
+                "description": "TEMP.Veles is a Russia-based threat group that has targeted critical infrastructure. The group has been observed utilizing TRITON, a malware framework designed to manipulate industrial safety systems",
+                "labels": "nation-state",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

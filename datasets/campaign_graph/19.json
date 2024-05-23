@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "roy moore scandal used for phishing schemes aimed at law firms - cyberscoop.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT19",
+                "date_start": "2017-06",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT19",
+                "description": "A group likely composed of freelancers, with some degree of sponsorship by the Chinese government",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

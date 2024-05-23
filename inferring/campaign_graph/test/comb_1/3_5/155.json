@@ -1,0 +1,84 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Operation Aurora",
+                    "Elderwood Group",
+                    "Elderwood"
+                ],
+                "date_start": [
+                    "2009-12",
+                    "2009-06"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Operation Aurora",
+                    "Elderwood Group",
+                    "Elderwood"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2010-0249",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2010-0806",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2010-3333",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

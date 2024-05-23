@@ -1,0 +1,37 @@
+{
+    "pdf_title": [
+        "carefirst blue cross breach hits 1.1m — krebs on security.pdf",
+        "shell crew variants continue to fly under big av_u2019s radar.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Deep Panda",
+                "date_start": "2015-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Deep Panda",
+                "description": "Deep Panda is a suspected Chinese threat group known to target many industries, including government, defense, financial, and telecommunications",
+                "goals": "espionage,financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": []
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "hxxp://droobox.online:80",
+                "id": "server1"
+            },
+            {
+                "name": "msdn.cloud",
+                "id": "server2"
+            }
+        ],
+        "victim": [],
+        "related file": [
+            {
+                "name": "MinutesofMeeting-2May19.docx",
+                "id": "file1"
+            },
+            {
+                "name": "luncher.doc",
+                "id": "file2"
+            },
+            {
+                "name": "instal.xml",
+                "id": "file3"
+            }
+        ],
+        "threat actor": [],
+        "tool": [
+            {
+                "name": "MSBuild",
+                "id": "tool1"
+            },
+            {
+                "name": "PowerShell Empire",
+                "id": "tool2"
+            },
+            {
+                "name": "FruityC2",
+                "id": "tool3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-11882",
+                "id": "vuln1"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "entity1": "file1",
+            "connection": "fetches",
+            "entity2": "server1"
+        },
+        {
+            "entity1": "file2",
+            "connection": "used CVE",
+            "entity2": "vuln1"
+        },
+        {
+            "entity1": "file2",
+            "connection": "used",
+            "entity2": "MSBuild"
+        },
+        {
+            "entity1": "file3",
+            "connection": "used",
+            "entity2": "MSBuild"
+        },
+        {
+            "entity1": "file3",
+            "connection": "executed",
+            "entity2": "server2"
+        },
+        {
+            "entity1": "file3",
+            "connection": "deobfuscated",
+            "entity2": "PowerShell Empire"
+        },
+        {
+            "entity1": "PowerShell Empire",
+            "connection": "launched by",
+            "entity2": "server2"
+        }
+    ]
+}

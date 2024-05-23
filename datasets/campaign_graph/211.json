@@ -1,0 +1,67 @@
+{
+    "pdf_title": [
+        "Server-Side Template Injection | PortSwigger Research.pdf",
+        "lazarus group使用dacls rat攻击linux平台.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Lazarus Group",
+                "date_start": "2019-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Lazarus Group",
+                "description": "Lazarus Group is commonly believed to be run by the North Korean government, motivated primarily by financial gain as a method of circumventing long-standing sanctions against the regime",
+                "goals": "espionage,financial gain,sabotage",
+                "labels": "nation-state",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Exploit Public-Facing Application",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Linux', 'Windows', 'macOS', 'AWS', 'GCP', 'Azure']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2018-12",
+                "name": "CVE-2019-3396",
+                "baseScore": "9.8",
+                "publishedDate": "2019-03",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

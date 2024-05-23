@@ -1,0 +1,88 @@
+{
+    "pdf_title": [
+        "Bitdefender-WhitePaper-An-APT-Blueprint-Gaining-New-Visibility-into-Financial-Threats-interactive.pdf"
+    ],
+    "num_records": 3,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Carbanak",
+                "date_start": "2018-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Carbanak",
+                "description": "Carbanak is a threat group that mainly targets banks. It also refers to malware of the same name (Carbanak)",
+                "labels": "crime-syndicate",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2017-07",
+                "name": "CVE-2017-11882",
+                "baseScore": "7.8",
+                "publishedDate": "2017-11",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2017-12",
+                "name": "CVE-2018-0802",
+                "baseScore": "7.8",
+                "publishedDate": "2018-01",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2017-05",
+                "name": "CVE-2017-8570",
+                "baseScore": "7.8",
+                "publishedDate": "2017-07",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Deputy Dog",
+                    "APT17"
+                ],
+                "date_start": [
+                    "2017-08"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Deputy Dog",
+                    "APT17"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spearphishing",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Malicious email attachments",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2013-1333",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

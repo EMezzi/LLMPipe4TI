@@ -1,0 +1,77 @@
+{
+    "pdf_title": [
+        "carbanak gang is back and packing new guns _ welivesecurity.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Carbanak",
+                "date_start": "2015-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Carbanak",
+                "description": "Carbanak is a threat group that mainly targets banks. It also refers to malware of the same name (Carbanak)",
+                "labels": "crime-syndicate",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2015-03",
+                "name": "CVE-2015-2426",
+                "baseScore": "9.3",
+                "publishedDate": "2015-07",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2015-02",
+                "name": "CVE-2015-1770",
+                "baseScore": "9.3",
+                "publishedDate": "2015-06",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

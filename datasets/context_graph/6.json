@@ -1,0 +1,163 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "APT28",
+                "description": "APT 28 is a threat group that has been attributed to Russia’s Main Intelligence Directorate of the Russian General Staff",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Russia",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2015-2590",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2015-2424",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2010-3333",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2014-1761",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2015-1701",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2015-3043",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "cve-2015-1641",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "cve-2016-7855",
+                "id": "vulnerability9"
+            },
+            {
+                "name": "cve-2016-7255",
+                "id": "vulnerability10"
+            },
+            {
+                "name": "cve-2017-11292",
+                "id": "vulnerability11"
+            },
+            {
+                "name": "cve-2017-0262",
+                "id": "vulnerability12"
+            },
+            {
+                "name": "cve-2017-0263",
+                "id": "vulnerability13"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ],
+            [
+                "APT1",
+                "vulnerability8"
+            ],
+            [
+                "APT1",
+                "vulnerability9"
+            ],
+            [
+                "APT1",
+                "vulnerability10"
+            ],
+            [
+                "APT1",
+                "vulnerability11"
+            ],
+            [
+                "APT1",
+                "vulnerability12"
+            ],
+            [
+                "APT1",
+                "vulnerability13"
+            ]
+        ]
+    }
+}

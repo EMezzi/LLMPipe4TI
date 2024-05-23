@@ -1,0 +1,115 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "jmj.com",
+                "id": "1"
+            },
+            {
+                "name": "pandorasong.com",
+                "id": "2"
+            }
+        ],
+        "victim": [
+            {
+                "name": "U.S. Department of State",
+                "id": "3"
+            }
+        ],
+        "related file": [
+            {
+                "name": "ZIP archive",
+                "id": "4"
+            },
+            {
+                "name": "Windows shortcut file",
+                "id": "5"
+            },
+            {
+                "name": "Pandora Malleable C2 Profile",
+                "id": "6"
+            },
+            {
+                "name": "U.S. Department of State form",
+                "id": "7"
+            }
+        ],
+        "threat actor": [
+            {
+                "name": "Cobalt Strike Beacon",
+                "id": "8"
+            }
+        ],
+        "tool": [
+            {
+                "name": "Cobalt Strike",
+                "id": "9"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Phishing",
+                "id": "10"
+            },
+            {
+                "name": "Weaponized Windows shortcut file",
+                "id": "11"
+            },
+            {
+                "name": "Cobalt Strike Beacon Payload",
+                "id": "12"
+            },
+            {
+                "name": "Modified C2 Profile",
+                "id": "13"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "entity1": "jmj.com",
+            "connection": "hosted",
+            "entity2": "ZIP archive"
+        },
+        {
+            "entity1": "Windows shortcut file",
+            "connection": "executed by",
+            "entity2": "PowerShell command"
+        },
+        {
+            "entity1": "PowerShell command",
+            "connection": "executed",
+            "entity2": "Cobalt Strike Beacon"
+        },
+        {
+            "entity1": "Cobalt Strike Beacon",
+            "connection": "configured with",
+            "entity2": "Pandora Malleable C2 Profile"
+        },
+        {
+            "entity1": "Cobalt Strike Beacon",
+            "connection": "dropped",
+            "entity2": "U.S. Department of State form"
+        },
+        {
+            "entity1": "Cobalt Strike Beacon",
+            "connection": "dropped",
+            "entity2": "Pandora Malleable C2 Profile"
+        },
+        {
+            "entity1": "Pandora Malleable C2 Profile",
+            "connection": "used by",
+            "entity2": "command and control (C2) domain pandorasong.com"
+        },
+        {
+            "entity1": "Pandora Malleable C2 Profile",
+            "connection": "modified for",
+            "entity2": "Cobalt Strike Beacon"
+        },
+        {
+            "entity1": "Windows shortcut file",
+            "connection": "related to",
+            "entity2": "November 2016 campaign"
+        }
+    ]
+}

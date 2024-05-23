@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "overruled_ containing a potentially destructive adversary _ fireeye inc.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT33",
+                "date_start": "2018-07",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT33",
+                "description": "APT33 has targeted organizations in the United States, Saudi Arabia and South Korea. APT33 has shown particular interest in organizations in the aviation sector involved in both military and commercial capacities, as well as organizations in the energy sector",
+                "goals": "espionage,sabotage",
+                "labels": "nation-state",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "['Firewall', 'Host intrusion prevention systems', 'Network intrusion detection system', 'Process whitelisting', 'System access controls', 'Anti-virus']",
+                "effective_permissions": "['User', 'Administrator'] ",
+                "permissions": "['User', 'Administrator']",
+                "name": "Valid Accounts",
+                "remote": "None",
+                "tactic": "initial-access",
+                "network": "None",
+                "platforms": "['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'SaaS', 'Office 365']",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2017-07",
+                "name": "CVE-2017-11774",
+                "baseScore": "7.8",
+                "publishedDate": "2017-10",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

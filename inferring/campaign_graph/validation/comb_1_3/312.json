@@ -1,0 +1,73 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Threat Group-3390",
+                    "Emissary Panda"
+                ],
+                "date_start": [
+                    "2019-04"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Threat Group-3390",
+                    "Emissary Panda"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "CVE-2019-0604",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2019-0604",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2017-0144",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

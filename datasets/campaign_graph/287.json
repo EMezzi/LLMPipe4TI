@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "Endpoint Protection - Symantec Enterprise - Sowbug- Cyber.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Sowbug",
+                "date_start": "2016-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Sowbug",
+                "description": "Sowbug is a threat group that has conducted targeted attacks against organizations in South America and Southeast Asia, particularly government entities, since at least 2015",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

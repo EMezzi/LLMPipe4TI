@@ -1,0 +1,41 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "APT39",
+                "description": "APT39 have targeted the telecommunication and travel industries to collect personal information that aligns with Iran's national priorities",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Iran",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": []
+    }
+}

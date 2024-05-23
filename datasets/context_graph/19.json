@@ -1,0 +1,65 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Charming Kitten",
+                "description": "Charming Kitten is an Iranian cyberespionage group that to focus on targeting individuals of interest to Iran who work in academic research, human rights, and media",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Iran",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing via service",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector4"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ],
+            [
+                "APT1",
+                "attack_vector4"
+            ]
+        ],
+        "targets": []
+    }
+}

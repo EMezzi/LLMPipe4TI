@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "Kim Suki's organization begins watering hole 'Operation Low Kick'.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Kimsuky",
+                "date_start": "2019-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Kimsuky",
+                "description": "Kimsuky is a North Korean-based threat group that has been active since at least September 2013. The group focuses on targeting Korean think tank as well as DPRK/nuclear-related targets. The group was attributed as the actor behind the Korea Hydro & Nuclear Power Co. compromise.",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "['User']",
+                "name": "Drive-by Compromise",
+                "remote": "None",
+                "tactic": "initial-access",
+                "network": "None",
+                "platforms": "['Windows', 'Linux', 'macOS', 'SaaS']",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2018-03",
+                "name": "CVE-2018-8174",
+                "baseScore": "7.5",
+                "publishedDate": "2018-05",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

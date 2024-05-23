@@ -1,0 +1,77 @@
+{
+    "pdf_title": [
+        "spy of the tiger _ fireeye inc.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "PittyTiger",
+                "date_start": "2014-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "PittyTiger",
+                "description": "PittyTiger is a threat group believed to operate out of China that uses multiple different types of malware to maintain command and control.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2011-12",
+                "name": "CVE-2012-0158",
+                "baseScore": "9.3",
+                "publishedDate": "2012-04",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2014-01",
+                "name": "CVE-2014-1761",
+                "baseScore": "9.3",
+                "publishedDate": "2014-03",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

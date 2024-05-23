@@ -1,0 +1,55 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Premera"
+                ],
+                "date_start": [
+                    "2014-06",
+                    "2014-04",
+                    "2014-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Premera"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": [
+            {
+                "name": "CVE-2014-0160",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2014-3566",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": []
+    }
+}

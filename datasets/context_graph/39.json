@@ -1,0 +1,41 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Gallmaker",
+                "description": "Gallmaker is a cyberespionage group that has targeted victims in the Middle East and has been active since at least December 2017",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": []
+    }
+}

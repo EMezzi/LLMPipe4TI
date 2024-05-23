@@ -1,0 +1,36 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "E-ISAC"
+                ],
+                "date_start": [
+                    "2015-12",
+                    "2015-03"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "APT1"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": []
+    }
+}

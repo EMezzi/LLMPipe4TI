@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "apt32 returns with new techniques to attack south east asian countries - soc prime.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT32",
+                "date_start": "2019-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT32",
+                "description": "APT32 targeting foreign corporations with a vested interest in Vietnam’s manufacturing, consumer products, and hospitality sectors. APT32 has also targeted foreign governments, as well as Vietnamese dissidents",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

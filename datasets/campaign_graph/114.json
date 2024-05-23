@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "Operation_Wilted_Tulip.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "CopyKittens",
+                "date_start": "2017-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "CopyKittens",
+                "description": "CopyKittens is an Iranian cyberespionage group that has been operating since at least 2013",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Tropic Trooper",
+                "description": "Tropic Trooper is an unaffiliated threat group that has led targeted campaigns against targets in Taiwan, the Philippines, and Hong Kong",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2010-3333",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2017-11882",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2017-0199",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2018-0802",
+                "id": "vulnerability6"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Thrip"
+                ],
+                "date_start": [
+                    "2018-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Thrip"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "PsExec",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "PowerShell",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Mimikatz",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "WinSCP",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "LogMeIn",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "unknown",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2018-8174",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

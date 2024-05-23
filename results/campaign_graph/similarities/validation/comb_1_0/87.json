@@ -1,0 +1,155 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                1.0
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.0
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                1.0
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Exploit Public-Facing Application",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "Remote File Copy",
+                    "id": "attack_vector3"
+                },
+                "attack_vector4": {
+                    "name": "Commonly Used Port",
+                    "id": "attack_vector4"
+                },
+                "attack_vector5": {
+                    "name": "Uncommonly Used Port",
+                    "id": "attack_vector5"
+                },
+                "attack_vector6": {
+                    "name": "Custom Command and Control Protocol",
+                    "id": "attack_vector6"
+                },
+                "attack_vector7": {
+                    "name": "Data Encoding",
+                    "id": "attack_vector7"
+                },
+                "attack_vector8": {
+                    "name": "Standard Application Layer Protocol",
+                    "id": "attack_vector8"
+                }
+            },
+            "total_sim": 1.0
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {
+                "vulnerability2": {
+                    "name": "CVE-2019-1653",
+                    "id": "vulnerability2"
+                },
+                "vulnerability3": {
+                    "name": "CVE-2019-1652",
+                    "id": "vulnerability3"
+                },
+                "vulnerability4": {
+                    "name": "CVE-2020-10189",
+                    "id": "vulnerability4"
+                }
+            },
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                1.0
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                1.0
+            ],
+            "false positives": {
+                "targets2": [
+                    "campaign1",
+                    "vulnerability2"
+                ],
+                "targets3": [
+                    "campaign1",
+                    "vulnerability3"
+                ],
+                "targets4": [
+                    "campaign1",
+                    "vulnerability4"
+                ]
+            },
+            "total_sim": 1.0
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                1.0
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs4": [
+                    "campaign1",
+                    "attack_vector4"
+                ],
+                "employs5": [
+                    "campaign1",
+                    "attack_vector5"
+                ],
+                "employs6": [
+                    "campaign1",
+                    "attack_vector6"
+                ],
+                "employs7": [
+                    "campaign1",
+                    "attack_vector7"
+                ],
+                "employs8": [
+                    "campaign1",
+                    "attack_vector8"
+                ]
+            },
+            "total_sim": 1.0
+        }
+    }
+}

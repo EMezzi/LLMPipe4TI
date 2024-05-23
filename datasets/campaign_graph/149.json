@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "Op_Dust_Storm_Report.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Dust Storm",
+                "date_start": "2011-04",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Dust Storm",
+                "description": "Dust Storm is a threat group that has targeted multiple industries in Japan, South Korea, the United States, Europe, and several Southeast Asian countries.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2011-01",
+                "name": "CVE-2011-0611",
+                "baseScore": "9.3",
+                "publishedDate": "2011-04",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

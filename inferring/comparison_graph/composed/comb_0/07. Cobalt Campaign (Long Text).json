@@ -1,0 +1,143 @@
+{
+    "nodes": {
+        "server": [],
+        "victim": [],
+        "related file": [
+            {
+                "name": "malicious PDF file",
+                "id": "malicious_PDF_file"
+            },
+            {
+                "name": "weaponized RTF file",
+                "id": "weaponized_RTF_file"
+            },
+            {
+                "name": "JScript backdoor",
+                "id": "JScript_backdoor"
+            },
+            {
+                "name": "INF file",
+                "id": "INF_file"
+            },
+            {
+                "name": "SCT file",
+                "id": "SCT_file"
+            },
+            {
+                "name": "COM server DLL binary",
+                "id": "COM_server_DLL_binary"
+            },
+            {
+                "name": "PowerShell script",
+                "id": "PowerShell_script"
+            },
+            {
+                "name": "Cobalt Strike beacon",
+                "id": "Cobalt_Strike_beacon"
+            }
+        ],
+        "threat actor": [],
+        "tool": [
+            {
+                "name": "cmstp",
+                "id": "cmstp"
+            },
+            {
+                "name": "msxsl",
+                "id": "msxsl"
+            },
+            {
+                "name": "regsvr32.exe",
+                "id": "regsvr32_exe"
+            },
+            {
+                "name": "PowerShell",
+                "id": "PowerShell"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-11882",
+                "id": "CVE-2017-11882"
+            },
+            {
+                "name": "CVE-2017-8570",
+                "id": "CVE-2017-8570"
+            },
+            {
+                "name": "CVE-2018-8174",
+                "id": "CVE-2018-8174"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "related file": "malicious PDF file",
+            "connection": "contains exploit for",
+            "vulnerability": "CVE-2017-11882"
+        },
+        {
+            "related file": "malicious PDF file",
+            "connection": "contains exploit for",
+            "vulnerability": "CVE-2017-8570"
+        },
+        {
+            "related file": "malicious PDF file",
+            "connection": "contains exploit for",
+            "vulnerability": "CVE-2018-8174"
+        },
+        {
+            "related file": "weaponized RTF file",
+            "connection": "contains exploit for",
+            "vulnerability": "CVE-2017-11882"
+        },
+        {
+            "related file": "weaponized RTF file",
+            "connection": "contains exploit for",
+            "vulnerability": "CVE-2017-8570"
+        },
+        {
+            "related file": "weaponized RTF file",
+            "connection": "contains exploit for",
+            "vulnerability": "CVE-2018-8174"
+        },
+        {
+            "related file": "JScript backdoor",
+            "connection": "used by",
+            "tool": "cmstp"
+        },
+        {
+            "related file": "JScript backdoor",
+            "connection": "used by",
+            "tool": "msxsl"
+        },
+        {
+            "related file": "INF file",
+            "connection": "used by",
+            "tool": "cmstp"
+        },
+        {
+            "related file": "SCT file",
+            "connection": "used by",
+            "tool": "cmstp"
+        },
+        {
+            "related file": "weaponized RTF file",
+            "connection": "dropped by"
+        },
+        {
+            "related file": "PowerShell script",
+            "connection": "used by",
+            "tool": "cmstp"
+        },
+        {
+            "related file": "PowerShell script",
+            "connection": "used by",
+            "tool": "PowerShell"
+        },
+        {
+            "related file": "PowerShell script",
+            "connection": "downloaded by"
+        }
+    ]
+}

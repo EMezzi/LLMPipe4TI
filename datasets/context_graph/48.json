@@ -1,0 +1,75 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Leviathan",
+                "description": "Leviathan is a cyber espionage group that has been active since at least 2013. The group generally targets defense and government organizations",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2017-8759",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2017-0199",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2017-11882",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ]
+        ]
+    }
+}

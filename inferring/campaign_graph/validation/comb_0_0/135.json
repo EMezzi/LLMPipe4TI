@@ -1,0 +1,23 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Unknown"
+                ],
+                "date_start": [
+                    "2014-12"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [],
+        "targets": [],
+        "employs": []
+    }
+}

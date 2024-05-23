@@ -1,0 +1,107 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "APT3",
+                "description": "APT3 is a sophisticated threat group that has been active since at least 2010. APT3 utilizes a broad range of tools and techniques including spear-phishing attacks, zero-day exploits, and numerous unique and publicly available remote access tools (RAT)",
+                "goals": "espionage",
+                "labels": "nation-state",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "exploit public-facing application",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2014-1776",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2014-6332",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2014-4113",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2015-3113",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2015-5119",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2019-0703",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2017-0143",
+                "id": "vulnerability7"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ]
+        ]
+    }
+}

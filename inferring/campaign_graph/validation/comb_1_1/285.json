@@ -1,0 +1,35 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "SilverTerrier"
+                ],
+                "date_start": [
+                    "2014-07"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "SilverTerrier"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": []
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Drakon APT",
+                "date_start": [],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Drakon APT",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-unknown",
+                "id": "vulnerability1"
+            }
+        ]
+    }
+}

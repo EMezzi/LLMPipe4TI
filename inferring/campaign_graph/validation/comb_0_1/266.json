@@ -1,0 +1,65 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Rancor"
+                ],
+                "date_start": [
+                    "2018-12",
+                    "2017-01",
+                    "2019-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Rancor"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Malicious Macro in Microsoft Excel Document",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "VBScript Payload",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2018-0802",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

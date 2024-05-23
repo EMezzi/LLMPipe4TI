@@ -1,0 +1,67 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9999998807907104
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998807907104
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.9999997615814209
+            ],
+            "false positives": {},
+            "total_sim": 0.9999997615814209
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "HTA files that execute PowerShell scripts as part of an embedded VBScript",
+                    "id": "attack_vector1"
+                },
+                "attack_vector2": {
+                    "name": "WMI",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "Powershell",
+                    "id": "attack_vector3"
+                }
+            }
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.9999998211860657
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998211860657
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ]
+            }
+        }
+    }
+}

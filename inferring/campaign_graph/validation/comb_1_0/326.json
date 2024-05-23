@@ -1,0 +1,81 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "APT17",
+                    "Winnti group"
+                ],
+                "date_start": [
+                    "2013-11"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "APT17",
+                    "Winnti group"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Malicious MS Word documents",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Spear-phishing emails",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2013-3906",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ],
+            [
+                "campaign2",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign2",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign2",
+                "attack_vector1"
+            ],
+            [
+                "campaign2",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

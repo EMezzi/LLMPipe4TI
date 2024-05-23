@@ -1,0 +1,91 @@
+{
+    "nodes_similarities": {
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.0
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        },
+        "country": {
+            "country1": [
+                "country1",
+                0.5756246447563171
+            ],
+            "false positives": {},
+            "total_sim": 0.5756246447563171
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                1.0
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Spearphishing Link",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 1.0
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {
+                "vulnerability2": {
+                    "name": "CVE-2017-11882",
+                    "id": "vulnerability2"
+                }
+            },
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "origin": {
+            "origin1": [
+                [
+                    "APT1",
+                    "country1"
+                ],
+                0.7878123223781586
+            ],
+            "false positives": {},
+            "total_sim": 0.7878123223781586
+        },
+        "uses": {
+            "uses1": [
+                [
+                    "APT1",
+                    "attack_vector1"
+                ],
+                1.0
+            ],
+            "false positives": {
+                "uses2": [
+                    "APT1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 1.0
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "APT1",
+                    "vulnerability1"
+                ],
+                1.0
+            ],
+            "false positives": {
+                "targets2": [
+                    "APT1",
+                    "vulnerability2"
+                ]
+            },
+            "total_sim": 1.0
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "TEMP.Veles",
+                "description": "TEMP.Veles is a Russia-based threat group that has targeted critical infrastructure. The group has been observed utilizing TRITON, a malware framework designed to manipulate industrial safety systems",
+                "labels": "nation-state",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Russia",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [],
+        "targets": []
+    }
+}

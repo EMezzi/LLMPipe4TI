@@ -1,0 +1,73 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "FIN7",
+                    "Carbanak"
+                ],
+                "date_start": [
+                    "2017-10"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "FIN7",
+                    "Carbanak"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spear-phishing with malicious attachments",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Fileless attack",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Reflective DLL injection",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

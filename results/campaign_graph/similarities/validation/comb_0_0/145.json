@@ -1,0 +1,51 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.561858169734478
+            ],
+            "false positives": {},
+            "total_sim": 0.561858169734478
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.123716339468956
+            ],
+            "false positives": {},
+            "total_sim": 0.123716339468956
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Generic Routing Encapsulation (GRE)",
+                    "id": "attack_vector1"
+                }
+            }
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.342787254601717
+            ],
+            "false positives": {},
+            "total_sim": 0.342787254601717
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "mcafee uncovers operation honeybee_ a malicious document campaign targeting humanitarian aid groups _ mcafee blogs.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Honeybee",
+                "date_start": "2017-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Honeybee",
+                "description": "Honeybee is a campaign led by an unknown actor that targets humanitarian aid organizations and has been active in Vietnam, Singapore, Argentina, Japans, Indonesia, and Canada. It has been an active operation since August of 2017 and as recently as February 2018.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

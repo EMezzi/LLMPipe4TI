@@ -1,0 +1,83 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "BlackOasis",
+                "description": "BlackOasis is a Middle Eastern threat group that is believed to be a customer of Gamma Group",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2016-4117",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2015-5119",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2016-0984",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2017-11292",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2017-8759",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6104654595255852
+            ],
+            "false positives": {},
+            "total_sim": 0.6104654595255852
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.22093091905117035
+            ],
+            "false positives": {},
+            "total_sim": 0.22093091905117035
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "RDP Tunneling",
+                    "id": "attack_vector1"
+                },
+                "attack_vector2": {
+                    "name": "IFEO Injection",
+                    "id": "attack_vector2"
+                }
+            }
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-yyyy-2017-0199",
+                    "id": "vulnerability1"
+                },
+                "vulnerability2": {
+                    "name": "CVE-yyyy-2017-11882",
+                    "id": "vulnerability2"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.41569818928837776
+            ],
+            "false positives": {},
+            "total_sim": 0.41569818928837776
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                "targets2": [
+                    "campaign1",
+                    "vulnerability2"
+                ]
+            }
+        },
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            }
+        }
+    }
+}

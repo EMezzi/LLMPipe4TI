@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "奇安信威胁情报中心.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "DarkHydrus",
+                "date_start": "2019-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "DarkHydrus",
+                "description": "DarkHydrus is a threat group that has targeted government agencies and educational institutions in the Middle East since at least 2016",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

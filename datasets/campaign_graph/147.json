@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "dragonfly_ western energy sector targeted by sophisticated attack group _ symantec blogs.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Dragonfly 2.0",
+                "date_start": "2015-12",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Dragonfly 2.0",
+                "description": "Dragonfly 2.0 is a suspected Russian group that has targeted government entities and multiple U.S. critical infrastructure sectors since at least March 2016",
+                "labels": "crime-syndicate",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

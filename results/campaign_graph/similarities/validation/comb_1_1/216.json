@@ -1,0 +1,137 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9999999403953552
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999403953552
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.9999998807907104
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998807907104
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.661272406578064
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Lure documents using CVE-2017-11882",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "Stolen code signing certificates",
+                    "id": "attack_vector3"
+                },
+                "attack_vector4": {
+                    "name": "Use of bitsadmin.exe to download additional tools",
+                    "id": "attack_vector4"
+                },
+                "attack_vector5": {
+                    "name": "Use of PowerShell to download additional tools",
+                    "id": "attack_vector5"
+                },
+                "attack_vector6": {
+                    "name": "Using C:\\Windows\\Debug and C:\\Perflogs as staging directories",
+                    "id": "attack_vector6"
+                },
+                "attack_vector7": {
+                    "name": "Leveraging Hyperhost VPS and Proton VPN exit nodes to access webshells on internet-facing systems",
+                    "id": "attack_vector7"
+                },
+                "attack_vector8": {
+                    "name": "Using Windows Management Instrumentation (WMI) for persistence",
+                    "id": "attack_vector8"
+                },
+                "attack_vector9": {
+                    "name": "Using Windows Shortcut files (.lnk) in the Startup folder",
+                    "id": "attack_vector9"
+                }
+            },
+            "total_sim": 0.661272406578064
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.9999999105930328
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999105930328
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.9999999701976776
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999701976776
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.8306361734867096
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs4": [
+                    "campaign1",
+                    "attack_vector4"
+                ],
+                "employs5": [
+                    "campaign1",
+                    "attack_vector5"
+                ],
+                "employs6": [
+                    "campaign1",
+                    "attack_vector6"
+                ],
+                "employs7": [
+                    "campaign1",
+                    "attack_vector7"
+                ],
+                "employs8": [
+                    "campaign1",
+                    "attack_vector8"
+                ],
+                "employs9": [
+                    "campaign1",
+                    "attack_vector9"
+                ]
+            },
+            "total_sim": 0.8306361734867096
+        }
+    }
+}

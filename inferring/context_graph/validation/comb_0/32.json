@@ -1,0 +1,74 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": [
+                    "FIN10"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Canada",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Data from Local System",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Data Compressed",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Data from Information Repositories",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-0143",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2017-0144",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

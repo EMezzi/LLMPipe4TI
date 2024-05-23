@@ -1,0 +1,73 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6536394357681274
+            ],
+            "false positives": {},
+            "total_sim": 0.6536394357681274
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3072788715362549
+            ],
+            "false positives": {},
+            "total_sim": 0.3072788715362549
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Phishing",
+                    "id": "attack_vector1"
+                },
+                "attack_vector2": {
+                    "name": "Man-in-the-middle",
+                    "id": "attack_vector2"
+                }
+            }
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2017-12730",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.48045915365219116
+            ],
+            "false positives": {},
+            "total_sim": 0.48045915365219116
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            }
+        }
+    }
+}

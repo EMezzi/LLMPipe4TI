@@ -1,0 +1,62 @@
+{
+    "pdf_title": [
+        "Charming_Kitten_2017.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Charming Kitten",
+                "date_start": "2017-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Charming Kitten",
+                "description": "Charming Kitten is an Iranian cyberespionage group that to focus on targeting individuals of interest to Iran who work in academic research, human rights, and media",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

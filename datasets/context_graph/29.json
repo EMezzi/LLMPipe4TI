@@ -1,0 +1,115 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Dust Storm",
+                "description": "Dust Storm is a threat group that has targeted multiple industries in Japan, South Korea, the United States, Europe, and several Southeast Asian countries.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2011-1255",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2011-0611",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2010-1885",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2011-0611",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2012-1889",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2013-5990",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2014-0322",
+                "id": "vulnerability7"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ]
+        ]
+    }
+}

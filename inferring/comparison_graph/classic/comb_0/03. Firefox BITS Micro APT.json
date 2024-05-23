@@ -1,0 +1,31 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "BBN",
+                "date_start": [
+                    "unknown"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "BBN",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "exploit public-facing application",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "unknown",
+                "id": "vulnerability1"
+            }
+        ]
+    }
+}

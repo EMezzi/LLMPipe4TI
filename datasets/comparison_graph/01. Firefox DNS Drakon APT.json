@@ -1,0 +1,41 @@
+{
+  "title": "01. Firefox DNS Drakon APT",
+  "url": "https://github.com/darpa-i2o/Transparent-Computing",
+  "text": "The attack started by browsing to http://128.55.12.167:8641/config.html, selecting DNS, entering hostname Xx--ls8h.com, file 938527054, and clicking the Visit button. This triggered the Firefox backdoor to connect out via DNS to XX--ls8h.com. Drakon APT was downloaded and executed and connected to 128.55.12.167:8640 for C2. The attacker escalated privileges using the new File System Filter Driver, which looks for processes opening specific files which don’t exist and elevates them. Once SYSTEM, the attacker exfil’ed the host and network files as well as a passwd file in the home directory.",
+  "val_meta": {
+    "server": [
+      "128.55.12.167",
+      "Xx--ls8h.com"
+    ],
+    "victim": [],
+    "related_file": [
+      "file 938527054",
+      "network files",
+      "passwd file",
+      "config.html"
+    ],
+    "threat_actor": [],
+    "tool": [
+      "Drakon APT",
+      "File System Filter Driver"
+    ],
+    "vulnerability": [
+      "Firefox backdoor"
+    ]
+  },
+  "val_triples": [
+    "(128.55.12.167:8640, controls, Drakon APT)",
+    "(Drakon APT, exploits, Firefox backdoor)",
+    "(Xx--ls8h.com, delivers, Drakon APT)",
+    "(config.html, consists_of, file 938527054)",
+    "(01. Firefox DNS Drakon APT, has_related_file, file 938527054)",
+    "(01. Firefox DNS Drakon APT, has_related_file, network files)",
+    "(01. Firefox DNS Drakon APT, has_related_file, passwd file)",
+    "(01. Firefox DNS Drakon APT, has_related_file, config.html)",
+    "(01. Firefox DNS Drakon APT, has_server, 128.55.12.167)",
+    "(01. Firefox DNS Drakon APT, has_server, Xx--ls8h.com)",
+    "(01. Firefox DNS Drakon APT, uses, Drakon APT)",
+    "(01. Firefox DNS Drakon APT, uses, File System Filter Driver)",
+    "(01. Firefox DNS Drakon APT, exploits, Firefox backdoor)"
+  ]
+}

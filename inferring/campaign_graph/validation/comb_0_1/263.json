@@ -1,0 +1,144 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "MWI"
+                ],
+                "date_start": [
+                    "2016-07",
+                    "2016-08"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "MWI"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Microsoft Word Document",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2016-4117",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2015-2545",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2015-1641",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2012-0158",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "CVE-2013-3906",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "CVE-2014-1761",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "CVE-2010-3333",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "CVE-2016-0041",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "CVE-2016-0016",
+                "id": "vulnerability9"
+            },
+            {
+                "name": "CVE-2016-0018",
+                "id": "vulnerability10"
+            },
+            {
+                "name": "CVE-2015-6128",
+                "id": "vulnerability11"
+            },
+            {
+                "name": "CVE-2015-6132",
+                "id": "vulnerability12"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ],
+            [
+                "campaign1",
+                "vulnerability6"
+            ],
+            [
+                "campaign1",
+                "vulnerability7"
+            ],
+            [
+                "campaign1",
+                "vulnerability8"
+            ],
+            [
+                "campaign1",
+                "vulnerability9"
+            ],
+            [
+                "campaign1",
+                "vulnerability10"
+            ],
+            [
+                "campaign1",
+                "vulnerability11"
+            ],
+            [
+                "campaign1",
+                "vulnerability12"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

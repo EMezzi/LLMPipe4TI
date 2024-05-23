@@ -1,0 +1,72 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9999999105930328
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999105930328
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.9999998211860657
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998211860657
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector3",
+                0.577306866645813
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "phishing campaigns",
+                    "id": "attack_vector1"
+                },
+                "attack_vector2": {
+                    "name": "spam emails",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.577306866645813
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.9999998658895493
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998658895493
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                0.7886533886194229
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.7886533886194229
+        }
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "pdf_title": [
+        "Report#111--familiar feeling.pdf",
+        "tropic trooper_ keyboy_ group g0081 _ mitre att_ck®.pdf"
+    ],
+    "num_records": 3,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Tropic Trooper",
+                "date_start": "2018-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Tropic Trooper",
+                "description": "Tropic Trooper is an unaffiliated threat group that has led targeted campaigns against targets in Taiwan, the Philippines, and Hong Kong",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2017-12",
+                "name": "CVE-2018-0802",
+                "baseScore": "7.8",
+                "publishedDate": "2018-01",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0199",
+                "baseScore": "7.8",
+                "publishedDate": "2017-04",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2017-07",
+                "name": "CVE-2017-11882",
+                "baseScore": "7.8",
+                "publishedDate": "2017-11",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

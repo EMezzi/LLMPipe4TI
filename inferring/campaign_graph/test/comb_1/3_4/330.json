@@ -1,0 +1,53 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "APT41",
+                    "APT17",
+                    "Winnti Group",
+                    "Suckfly",
+                    "Wicked Panda"
+                ],
+                "date_start": [
+                    "2018-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "APT41",
+                    "APT17",
+                    "Winnti Group",
+                    "Suckfly",
+                    "Wicked Panda"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": [
+            {
+                "name": "CVE-2016-0728",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": []
+    }
+}

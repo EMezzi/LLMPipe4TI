@@ -1,0 +1,35 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Cobalt Strike",
+                "date_start": [
+                    "unknown"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Cobalt Strike",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "RDP",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "remote server compromise",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "unknown",
+                "id": "vulnerability1"
+            }
+        ]
+    }
+}

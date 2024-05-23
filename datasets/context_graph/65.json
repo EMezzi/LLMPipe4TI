@@ -1,0 +1,91 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Sandworm Team",
+                "description": "Sandworm Team is a Russian cyber espionage group that has operated since approximately 2009. The group likely consists of Russian pro-hacktivists",
+                "labels": "crime-syndicate",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Russia",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2014-4114",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2014-6352",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2010-3333",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2013-3906",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2014-1761",
+                "id": "vulnerability6"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ]
+        ]
+    }
+}

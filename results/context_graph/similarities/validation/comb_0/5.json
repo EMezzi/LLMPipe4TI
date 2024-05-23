@@ -1,0 +1,97 @@
+{
+    "nodes_similarities": {
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.000000238418579
+            ],
+            "false positives": {},
+            "total_sim": 1.000000238418579
+        },
+        "country": {
+            "country1": [
+                "country1",
+                0.9999999403953552
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999403953552
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.44837307929992676
+            ],
+            "attack_vector2": [
+                "attack_vector1",
+                0.8181955814361572
+            ],
+            "false positives": {},
+            "total_sim": 0.633284330368042
+        },
+        "vulnerability": {
+            "vulnerability1": [],
+            "vulnerability2": [],
+            "vulnerability3": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {
+                "vulnerability2": {
+                    "name": "CVE-2017-11882",
+                    "id": "vulnerability2"
+                }
+            },
+            "total_sim": 0.3333333333333333
+        }
+    },
+    "relations_similarities": {
+        "origin": {
+            "origin1": [
+                [
+                    "APT1",
+                    "country1"
+                ],
+                1.0000000894069672
+            ],
+            "false positives": {},
+            "total_sim": 1.0000000894069672
+        },
+        "uses": {
+            "uses1": [
+                [
+                    "APT1",
+                    "attack_vector2"
+                ],
+                0.7241866588592529
+            ],
+            "uses2": [
+                [
+                    "APT1",
+                    "attack_vector1"
+                ],
+                0.9090979099273682
+            ],
+            "false positives": {},
+            "total_sim": 0.8166422843933105
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "APT1",
+                    "vulnerability1"
+                ],
+                0.5000001192092896
+            ],
+            "targets2": [
+                [
+                    "APT1",
+                    "vulnerability2"
+                ],
+                0.5000001192092896
+            ],
+            "targets3": [],
+            "false positives": {},
+            "total_sim": 0.33333341280619305
+        }
+    }
+}

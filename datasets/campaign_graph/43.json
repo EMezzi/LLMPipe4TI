@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "apt30 behind a long-running cyber espionage campaignsecurity affairs.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT30",
+                "date_start": "2012-04",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT30",
+                "description": "APT 30 is a threat group suspected to be associated with the Chinese government",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

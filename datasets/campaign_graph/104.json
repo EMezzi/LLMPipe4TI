@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "iranian apt charming kitten impersonates clearsky_ the security firm that uncovered its campaigns _ cyware hacker news.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Charming Kitten",
+                "date_start": "2018-06",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Charming Kitten",
+                "description": "Charming Kitten is an Iranian cyberespionage group that to focus on targeting individuals of interest to Iran who work in academic research, human rights, and media",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

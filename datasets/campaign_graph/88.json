@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "APT41 Initiates Intrusion Campaign Using Multiple Exploits.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT41",
+                "date_start": "2020-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT41",
+                "description": "APT41 is a group that carries out Chinese state-sponsored espionage activity in addition to financially motivated activity. APT41 has been active since as early as 2012. The group has been observed targeting healthcare, telecom, technology, and video game industries in 14 countries.",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Exploit Public-Facing Application",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Linux', 'Windows', 'macOS', 'AWS', 'GCP', 'Azure']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2020-10189",
+                "baseScore": "9.8",
+                "publishedDate": "2020-03",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "sofacy attacks multiple government entities.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT28",
+                "date_start": "2019-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT28",
+                "description": "APT 28 is a threat group that has been attributed to Russia’s Main Intelligence Directorate of the Russian General Staff",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

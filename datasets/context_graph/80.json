@@ -1,0 +1,163 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Turla",
+                "description": "Turla is a Russian-based threat group that has infected victims in over 45 countries, spanning a range of industries including government, embassies, military, education, research and pharmaceutical companies since 2004",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Russia",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2008-4250",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2008-3431",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2012-1723",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2013-3346",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2013-5065",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2010-0232",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2010-0232",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "cve-2009-1125",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "cve-2009-1125",
+                "id": "vulnerability9"
+            },
+            {
+                "name": "cve-2009-3129",
+                "id": "vulnerability10"
+            },
+            {
+                "name": "cve-2013-2729",
+                "id": "vulnerability11"
+            },
+            {
+                "name": "cve-2012-4681",
+                "id": "vulnerability12"
+            },
+            {
+                "name": "cve-2017-0001",
+                "id": "vulnerability13"
+            },
+            {
+                "name": "cve-2017-0261",
+                "id": "vulnerability14"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ],
+            [
+                "APT1",
+                "vulnerability8"
+            ],
+            [
+                "APT1",
+                "vulnerability9"
+            ],
+            [
+                "APT1",
+                "vulnerability10"
+            ],
+            [
+                "APT1",
+                "vulnerability11"
+            ],
+            [
+                "APT1",
+                "vulnerability12"
+            ],
+            [
+                "APT1",
+                "vulnerability13"
+            ],
+            [
+                "APT1",
+                "vulnerability14"
+            ]
+        ]
+    }
+}

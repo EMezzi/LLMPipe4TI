@@ -1,0 +1,78 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6374824792146683
+            ],
+            "false positives": {},
+            "total_sim": 0.6374824792146683
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3078099191188812
+            ],
+            "false positives": {},
+            "total_sim": 0.3078099191188812
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.8091716766357422
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Watering-hole attack",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.8091716766357422
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-yyyy-XXXX",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.47264619916677475
+            ],
+            "false positives": {},
+            "total_sim": 0.47264619916677475
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.7233270779252052
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.7233270779252052
+        }
+    }
+}

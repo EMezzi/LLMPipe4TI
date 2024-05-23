@@ -1,0 +1,138 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": [
+                    "APT29"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Russia",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Credential Dumping",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Command-Line Interface",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Data from Local System",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Data Compressed",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Process Discovery",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "Remote Desktop Protocol",
+                "id": "attack_vector6"
+            },
+            {
+                "name": "Spearphishing Attachment",
+                "id": "attack_vector7"
+            },
+            {
+                "name": "System Network Configuration Discovery",
+                "id": "attack_vector8"
+            },
+            {
+                "name": "System Network Connections Discovery",
+                "id": "attack_vector9"
+            },
+            {
+                "name": "User Execution",
+                "id": "attack_vector10"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2019-11510",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2015-1701",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2017-11774",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ],
+            [
+                "APT1",
+                "attack_vector4"
+            ],
+            [
+                "APT1",
+                "attack_vector5"
+            ],
+            [
+                "APT1",
+                "attack_vector6"
+            ],
+            [
+                "APT1",
+                "attack_vector7"
+            ],
+            [
+                "APT1",
+                "attack_vector8"
+            ],
+            [
+                "APT1",
+                "attack_vector9"
+            ],
+            [
+                "APT1",
+                "attack_vector10"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6940435469150543
+            ],
+            "false positives": {},
+            "total_sim": 0.6940435469150543
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.38808709383010864
+            ],
+            "false positives": {},
+            "total_sim": 0.38808709383010864
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.3859245181083679
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Browser Exploit",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.3859245181083679
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5410653203725815
+            ],
+            "false positives": {},
+            "total_sim": 0.5410653203725815
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.8470217734575272
+            ],
+            "false positives": {},
+            "total_sim": 0.8470217734575272
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.5399840325117111
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.5399840325117111
+        }
+    }
+}

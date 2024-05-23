@@ -1,0 +1,96 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "ta51-pivot-2",
+                "id": "server1"
+            },
+            {
+                "name": "128.55.12.233",
+                "id": "server2"
+            }
+        ],
+        "victim": [],
+        "related file": [],
+        "threat actor": [],
+        "tool": [
+            {
+                "name": "Drakon",
+                "id": "tool1"
+            },
+            {
+                "name": "Firefox backdoor",
+                "id": "tool2"
+            },
+            {
+                "name": "Loader Drakon",
+                "id": "tool3"
+            },
+            {
+                "name": "perfmon driver",
+                "id": "tool4"
+            },
+            {
+                "name": "copykatz module",
+                "id": "tool5"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Firefox backdoor",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "privilege escalation",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "entity1": "ta51-pivot-2",
+            "connection": "attacked",
+            "entity2": "server1"
+        },
+        {
+            "entity1": "server1",
+            "connection": "deployed on",
+            "entity2": "C2"
+        },
+        {
+            "entity1": "server1",
+            "connection": "exploited",
+            "entity2": "Firefox backdoor"
+        },
+        {
+            "entity1": "128.55.12.233",
+            "connection": "executed in",
+            "entity2": "Firefox memory"
+        },
+        {
+            "entity1": "Firefox memory",
+            "connection": "connected out to",
+            "entity2": "128.55.12.233:8000"
+        },
+        {
+            "entity1": "Firefox memory",
+            "connection": "connected out to",
+            "entity2": "128.55.12.233:443"
+        },
+        {
+            "entity1": "BBN",
+            "connection": "reboot",
+            "entity2": "driver"
+        },
+        {
+            "entity1": "driver",
+            "connection": "disabled",
+            "entity2": "privilege escalation"
+        },
+        {
+            "entity1": "driver",
+            "connection": "loaded the",
+            "entity2": "copykatz module"
+        }
+    ]
+}

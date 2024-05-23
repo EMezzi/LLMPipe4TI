@@ -1,0 +1,66 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "APT35",
+                    "Magic Hound"
+                ],
+                "date_start": [
+                    "2015-06",
+                    "2019-08",
+                    "2018-11",
+                    "2019-07"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "APT35",
+                    "Magic Hound"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing email",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "decoy website impersonation (Google services)",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "phishing website impersonating non-google services (e.g., Instagram)",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

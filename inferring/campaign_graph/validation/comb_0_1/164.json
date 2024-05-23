@@ -1,0 +1,92 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "FIN7",
+                    "FIn7",
+                    "Carbanak"
+                ],
+                "date_start": [
+                    "2015-12",
+                    "2017-04"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "FIN7",
+                    "FIn7",
+                    "Carbanak"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spear phishing",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "malicious DOCX",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "malicious RTF",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "LnK files",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "VBScript",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

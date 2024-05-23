@@ -1,0 +1,41 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Leafminer",
+                "description": "Leafminer is targeting a broad list of government organizations and business verticals in various regions in the Middle East since at least early 2017",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Iran",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": []
+    }
+}

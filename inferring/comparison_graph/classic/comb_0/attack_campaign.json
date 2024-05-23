@@ -1,0 +1,19 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "server",
+                "date_start": [],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "server",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    }
+}

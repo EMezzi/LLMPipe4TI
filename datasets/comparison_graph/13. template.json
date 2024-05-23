@@ -1,0 +1,41 @@
+{
+  "title": "attack_campaign",
+  "url": "",
+  "text": "server,victim,related_file,related_file,threat_actor,tool,vulnerability",
+  "val_meta": {
+    "server": [
+      "server"
+    ],
+    "victim": [
+      "victim"
+    ],
+    "related_file": [
+      "related_file"
+    ],
+    "threat_actor": [
+      "threat_actor"
+    ],
+    "tool": [
+      "tool"
+    ],
+    "vulnerability": [
+      "vulnerability"
+    ]
+  },
+  "val_triples": [
+    "(server, controls, tool)",
+    "(server, delivers, related_file)",
+    "(server, delivers, tool)",
+    "(threat_actor, exploits, vulnerability)",
+    "(threat_actor, uses, tool)",
+    "(tool, exploits, vulnerability)",
+    "(tool, generates, related_file)",
+    "(related_file, consists_of, related_file)",
+    "(attack_campaign, exploits, vulnerability)",
+    "(attack_campaign, has_related_file, related_file)",
+    "(attack_campaign, has_server, server)",
+    "(attack_campaign, has_threat_actor, threat_actor)",
+    "(attack_campaign, targets_at, victim)",
+    "(attack_campaign, uses, tool)"
+  ]
+}

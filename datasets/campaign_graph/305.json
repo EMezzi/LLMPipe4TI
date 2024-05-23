@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "contagio - CVE-2012-1535 Sep.9, 2012 .pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Taidoor",
+                "date_start": "2012-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Taidoor",
+                "description": "Taidoor is a threat group that has operated since at least 2009 and has primarily targeted the Taiwanese government.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2012-03",
+                "name": "CVE-2012-1535",
+                "baseScore": "9.3",
+                "publishedDate": "2012-08",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

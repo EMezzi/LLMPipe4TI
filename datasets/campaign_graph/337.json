@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "menuPass Returns with New Malware and New Attacks Against Japanese Academics and Organizations.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "menuPass",
+                "date_start": "2016-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "menuPass",
+                "description": "menuPass is a threat group that appears to originate from China and has been active since approximately 2009",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "pdf_title": [
+        "puttering into the future….pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Putter Panda",
+                "date_start": "2017-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Putter Panda",
+                "description": "Putter Panda is a Chinese threat group that has been attributed to Unit 61486 of the 12th Bureau of the PLA’s 3rd General Staff Department (GSD)",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Link",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS']",
+                "tactic": "initial-access",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2011-12",
+                "name": "CVE-2012-0158",
+                "baseScore": "9.3",
+                "publishedDate": "2012-04",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

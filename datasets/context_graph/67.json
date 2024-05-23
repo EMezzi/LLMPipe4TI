@@ -1,0 +1,83 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Silence",
+                "description": "Silence is a financially motivated threat actor targeting financial institutions in different countries. The group was first seen in June 2016. Their main targets reside in Russia, Ukraine, Belarus, Azerbaijan, Poland and Kazakhstan. They compromised various banking systems, including the Russian Central Bank's Automated Workstation Client, ATMs, and card processing.",
+                "labels": "crime-syndicate",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2017-0262",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2008-4250",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2017-0143",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2017-0263",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2017-11882",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ]
+        ]
+    }
+}

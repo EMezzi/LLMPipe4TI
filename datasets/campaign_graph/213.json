@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "Leviathan, Espionage Actor Targets Defense & Government.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Leviathan",
+                "date_start": "2014-11",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Leviathan",
+                "description": "Leviathan is a cyber espionage group that has been active since at least 2013. The group generally targets defense and government organizations",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

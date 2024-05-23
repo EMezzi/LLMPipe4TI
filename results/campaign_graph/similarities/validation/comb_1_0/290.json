@@ -1,0 +1,80 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6624134033918381
+            ],
+            "false positives": {},
+            "total_sim": 0.6624134033918381
+        },
+        "APT": {},
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.5221269130706787
+            ],
+            "false positives": {},
+            "total_sim": 0.5221269130706787
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability2",
+                1
+            ],
+            "vulnerability2": [
+                "vulnerability3",
+                1
+            ],
+            "vulnerability3": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [],
+            "false positives": {},
+            "total_sim": 0.0
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability2"
+                ],
+                0.831206701695919
+            ],
+            "targets2": [
+                [
+                    "campaign1",
+                    "vulnerability3"
+                ],
+                0.831206701695919
+            ],
+            "targets3": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.831206701695919
+            ],
+            "false positives": {},
+            "total_sim": 0.831206701695919
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.5922701582312584
+            ],
+            "false positives": {},
+            "total_sim": 0.5922701582312584
+        }
+    }
+}

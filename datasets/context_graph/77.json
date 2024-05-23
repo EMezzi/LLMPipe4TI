@@ -1,0 +1,131 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Threat Group-3390",
+                "description": "Threat Group-3390 is a Chinese threat group that has extensively used strategic Web compromises to target victims. The group has been active since at least 2010",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "exploit public-facing application",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2008-1436",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2010-0738",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2011-3544",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2014-6324",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2015-5119",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2015-5123",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2017-11882",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "cve-2019-0604",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "cve-2017-0144",
+                "id": "vulnerability9"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ],
+            [
+                "APT1",
+                "vulnerability8"
+            ],
+            [
+                "APT1",
+                "vulnerability9"
+            ]
+        ]
+    }
+}

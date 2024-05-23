@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "prolific cybercrime gang favors legit login credentials.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "FIN5",
+                "date_start": "2008-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "FIN5",
+                "description": "FIN5 is a financially motivated threat group that has targeted personally identifiable information and payment card information",
+                "goals": "financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "valid accounts",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

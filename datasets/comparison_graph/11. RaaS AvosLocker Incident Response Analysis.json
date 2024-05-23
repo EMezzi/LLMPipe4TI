@@ -1,0 +1,45 @@
+{
+  "title": "11. RaaS AvosLocker Incident Response Analysis",
+  "url": "https://www.linkedin.com/pulse/raas-avoslocker-incident-response-analysis-fl%C3%A1vio-costa?trk=articles_directory",
+  "text": "The attackers use spam email campaigns as initial infection vectors for the delivery of the Avos ransomware payload, in this incident report specifically, the initial vector was a ESXi server exposed on the internet over UAG from Horizon, which was vulnerable to Log4J. During the encryption, process files are appended with the \".avos\" extension, but the updated variant appends with the extension\".avos2\". Linux version appends with the extension \".avoslinux\". According to deepweb research by Cyble Research Labs, the Threats Actors of Avos ransomware group are exploiting Microsoft Exchange Server vulnerabilities using Proxyshell, compromising the victim's network. CVEs involved in these exploits are CVE-2021-34473, CVE-2021-31206, CVE-2021-34523, and CVE-2021-31207.",
+  "val_meta": {
+    "server": [
+      "ESXi server",
+      "Microsoft Exchange Server"
+    ],
+    "victim": [],
+    "related_file": [],
+    "threat_actor": [
+      "Avos ransomware group"
+    ],
+    "tool": [
+      "Avos ransomware",
+      "UAG",
+      "Proxyshell"
+    ],
+    "vulnerability": [
+      "CVE-2021-34473",
+      "CVE-2021-31206",
+      "CVE-2021-34523",
+      "CVE-2021-31207"
+    ]
+  },
+  "val_triples": [
+    "(Avos ransomware group, exploits, CVE-2021-31206)",
+    "(Avos ransomware group, exploits, CVE-2021-31207)",
+    "(Avos ransomware group, exploits, CVE-2021-34473)",
+    "(Avos ransomware group, exploits, CVE-2021-34523)",
+    "(Avos ransomware group, uses, Avos ransomware)",
+    "(Avos ransomware group, uses, Proxyshell)",
+    "(11. RaaS AvosLocker Incident Response Analysis, has_server, ESXi server)",
+    "(11. RaaS AvosLocker Incident Response Analysis, has_server, Microsoft Exchange Server)",
+    "(11. RaaS AvosLocker Incident Response Analysis, has_threat_actor, Avos ransomware group)",
+    "(11. RaaS AvosLocker Incident Response Analysis, uses, Avos ransomware)",
+    "(11. RaaS AvosLocker Incident Response Analysis, uses, UAG)",
+    "(11. RaaS AvosLocker Incident Response Analysis, uses, Proxyshell)",
+    "(11. RaaS AvosLocker Incident Response Analysis, exploits, CVE-2021-34473)",
+    "(11. RaaS AvosLocker Incident Response Analysis, exploits, CVE-2021-31206)",
+    "(11. RaaS AvosLocker Incident Response Analysis, exploits, CVE-2021-34523)",
+    "(11. RaaS AvosLocker Incident Response Analysis, exploits, CVE-2021-31207)"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+    "pdf_title": [
+        "shedding skin – turla_u2019s fresh faces _ securelist.pdf",
+        "microsoft patch tuesday updates for may 2017 fix zero days exploited by russian apt groupssecurity affairs.pdf",
+        "eps processing zero-days exploited by multiple threat actors _ fireeye inc.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Turla",
+                "date_start": "2017-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Turla",
+                "description": "Turla is a Russian-based threat group that has infected victims in over 45 countries, spanning a range of industries including government, embassies, military, education, research and pharmaceutical companies since 2004",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0001",
+                "baseScore": "7.8",
+                "publishedDate": "2017-03",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0261",
+                "baseScore": "7.8",
+                "publishedDate": "2017-05",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

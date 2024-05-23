@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "catching up on the opm breach — krebs on security.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Deep Panda",
+                "date_start": "2014-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Deep Panda",
+                "description": "Deep Panda is a suspected Chinese threat group known to target many industries, including government, defense, financial, and telecommunications",
+                "goals": "espionage,financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6416079849004745
+            ],
+            "false positives": {},
+            "total_sim": 0.6416079849004745
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.2832159698009491
+            ],
+            "false positives": {},
+            "total_sim": 0.2832159698009491
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector3",
+                0.3720824718475342
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Embedded Shellcode in Malicious Documents",
+                    "id": "attack_vector1"
+                },
+                "attack_vector2": {
+                    "name": "In-Memory Implant",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.3720824718475342
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2015-2545",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.4624119773507118
+            ],
+            "false positives": {},
+            "total_sim": 0.4624119773507118
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                0.5068452283740044
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.5068452283740044
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "FIN5",
+                "description": "FIN5 is a financially motivated threat group that has targeted personally identifiable information and payment card information",
+                "goals": "financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "Unknown",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "valid accounts",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": []
+    }
+}

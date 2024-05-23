@@ -1,0 +1,32 @@
+{
+  "title": "02. Firefox Drakon APT Elevate Copykatz",
+  "url": "https://github.com/darpa-i2o/Transparent-Computing",
+  "text": "First attacked ta51-pivot-2 and deployed on C2, allowing us to run our attack from within the target network. Exploited Firefox backdoor by again browsing to http://128.55.12.233. Loader Drakon was executed in Firefox memory and connected out to 128.55.12.233:8000 and 128.55.12.233:443 for C2. After the BBN reboot, driver was disabled, and we would now be able to use privilege escalation via our perfmon driver. We loaded the copykatz module to recon data from the system.",
+  "val_meta": {
+    "server": [
+      "128.55.12.233"
+    ],
+    "victim": [
+      "ta51-pivot-2"
+    ],
+    "related_file": [],
+    "threat_actor": [],
+    "tool": [
+      "Loader Drakon",
+      "FireFox",
+      "copykatz module"
+    ],
+    "vulnerability": [
+      "Firefox backdoor"
+    ]
+  },
+  "val_triples": [
+    "(128.55.12.233, controls, Loader Drakon)",
+    "(02. Firefox Drakon APT Elevate Copykatz, has_server, 128.55.12.233)",
+    "(02. Firefox Drakon APT Elevate Copykatz, uses, Loader Drakon)",
+    "(02. Firefox Drakon APT Elevate Copykatz, uses, FireFox)",
+    "(02. Firefox Drakon APT Elevate Copykatz, uses, copykatz module)",
+    "(02. Firefox Drakon APT Elevate Copykatz, targets_at, ta51-pivot-2)",
+    "(02. Firefox Drakon APT Elevate Copykatz, exploits, Firefox backdoor)"
+  ]
+}

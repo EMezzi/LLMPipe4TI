@@ -1,0 +1,101 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "GCMAN",
+                    "Carbanak",
+                    "FIN7"
+                ],
+                "date_start": [
+                    "2014-12",
+                    "2015-02",
+                    "2015-09"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "GCMAN",
+                    "Carbanak",
+                    "FIN7"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "unknown",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2015-1701",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2015-1701",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "unknown",
+                "id": "vulnerability4"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

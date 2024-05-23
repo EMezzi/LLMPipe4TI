@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "what we can learn from the bangladesh central bank cyber heist - trendlabs security intelligence blog.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "unknown",
+                "date_start": "2016-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "unknown",
+                "description": "APT 38 concentrates on stealing money",
+                "labels": "nation-state",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

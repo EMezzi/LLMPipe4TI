@@ -1,0 +1,37 @@
+{
+    "pdf_title": [
+        "rpt-magnified-losses-amplified-need-for-cyber-attack-preparedness.pdf",
+        "virus bulletin 2019_ japanese attacks highlight savvy apt strategy _ threatpost.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT17",
+                "date_start": "2014-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT17",
+                "description": "APT 17 is a China-based threat group that has conducted network intrusions against U.S. government entities, the defense industry, law firms, information technology companies, mining companies, and non-government organizations",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": []
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "APT17",
+                "description": "APT 17 is a China-based threat group that has conducted network intrusions against U.S. government entities, the defense industry, law firms, information technology companies, mining companies, and non-government organizations",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2013-3893",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2013-3918",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2014-0324",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2014-0810",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2014-7247",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ]
+        ]
+    }
+}

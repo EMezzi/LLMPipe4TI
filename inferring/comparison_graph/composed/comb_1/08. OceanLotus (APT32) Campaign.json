@@ -1,0 +1,76 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "baomoivietnam.com",
+                "id": "baomoivietnam.com"
+            },
+            {
+                "name": "summerevent.webhop.net",
+                "id": "summerevent.webhop.net"
+            }
+        ],
+        "related file": [
+            {
+                "name": "The Adobe_Flash_install.rar",
+                "id": "The Adobe_Flash_install.rar"
+            },
+            {
+                "name": "Flash_Adobe_Install.exe",
+                "id": "Flash_Adobe_Install.exe"
+            },
+            {
+                "name": "goopdate.dll",
+                "id": "goopdate.dll"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Search Order Hijacking",
+                "id": "Search Order Hijacking"
+            }
+        ],
+        "tool": [
+            {
+                "name": "Cobalt Strike",
+                "id": "Cobalt Strike"
+            },
+            {
+                "name": "Shellcode",
+                "id": "Shellcode"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "source": "baomoivietnam.com",
+            "relation": "hosted",
+            "target": "The Adobe_Flash_install.rar"
+        },
+        {
+            "source": "The Adobe_Flash_install.rar",
+            "relation": "contained",
+            "target": "Flash_Adobe_Install.exe"
+        },
+        {
+            "source": "The Adobe_Flash_install.rar",
+            "relation": "contained",
+            "target": "goopdate.dll"
+        },
+        {
+            "source": "goopdate.dll",
+            "relation": "loaded",
+            "target": "Cobalt Strike"
+        },
+        {
+            "source": "Cobalt Strike",
+            "relation": "executed",
+            "target": "Shellcode"
+        },
+        {
+            "source": "Shellcode",
+            "relation": "downloaded from",
+            "target": "summerevent.webhop.net"
+        }
+    ]
+}

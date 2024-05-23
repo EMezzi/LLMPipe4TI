@@ -1,0 +1,155 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Patchwork",
+                "description": "Patchwork is a cyberespionage group that was first observed in December 2015. While the group has not been definitively attributed, circumstantial evidence suggests the group may be a pro-Indian or Indian entity",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "India",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "spearphishing via service",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector4"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2014-4114",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2014-6352",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2015-1641",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2017-8570",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2015-2545",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2017-0261",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "cve-2012-1856",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "cve-2014-4114",
+                "id": "vulnerability9"
+            },
+            {
+                "name": "cve-2017-0199",
+                "id": "vulnerability10"
+            },
+            {
+                "name": "cve-2017-8570",
+                "id": "vulnerability11"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ],
+            [
+                "APT1",
+                "attack_vector4"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ],
+            [
+                "APT1",
+                "vulnerability8"
+            ],
+            [
+                "APT1",
+                "vulnerability9"
+            ],
+            [
+                "APT1",
+                "vulnerability10"
+            ],
+            [
+                "APT1",
+                "vulnerability11"
+            ]
+        ]
+    }
+}

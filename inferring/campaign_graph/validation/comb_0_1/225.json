@@ -1,0 +1,79 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Desert Falcons"
+                ],
+                "date_start": [
+                    "2013-02",
+                    "2011-02",
+                    "2014-12"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Desert Falcons"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Targeted emails and documents",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Just click the shortcut: the rar/lnk trick",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Right-to-left extension override trick",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Social Networking tricks",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "The fake RealPlayer plugin trick",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

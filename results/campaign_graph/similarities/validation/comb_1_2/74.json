@@ -1,0 +1,65 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6984357833862305
+            ],
+            "false positives": {},
+            "total_sim": 0.6984357833862305
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.39687156677246094
+            ],
+            "false positives": {},
+            "total_sim": 0.39687156677246094
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "spear-phishing emails",
+                    "id": "attack_vector1"
+                }
+            }
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2017-0199",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5476536750793457
+            ],
+            "false positives": {},
+            "total_sim": 0.5476536750793457
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            }
+        }
+    }
+}

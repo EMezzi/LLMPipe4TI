@@ -1,0 +1,168 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Cobalt Group"
+                ],
+                "date_start": [
+                    "2018-11",
+                    "2017-00"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Cobalt Group"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spearphishing Attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Spearphishing Link",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Exploitation for Client Execution",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Exploitation for Privilege Escalation",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Scheduled Task",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "Remote Desktop Protocol",
+                "id": "attack_vector6"
+            },
+            {
+                "name": "Remote File Copy",
+                "id": "attack_vector7"
+            },
+            {
+                "name": "PowerShell",
+                "id": "attack_vector8"
+            },
+            {
+                "name": "Command-Line Interface",
+                "id": "attack_vector9"
+            },
+            {
+                "name": "Dynamic Data Exchange",
+                "id": "attack_vector10"
+            },
+            {
+                "name": "File Deletion",
+                "id": "attack_vector11"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-11882",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2018-8174",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2017-8570",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "CVE-2017-8759",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ],
+            [
+                "campaign1",
+                "attack_vector7"
+            ],
+            [
+                "campaign1",
+                "attack_vector8"
+            ],
+            [
+                "campaign1",
+                "attack_vector9"
+            ],
+            [
+                "campaign1",
+                "attack_vector10"
+            ],
+            [
+                "campaign1",
+                "attack_vector11"
+            ]
+        ]
+    }
+}

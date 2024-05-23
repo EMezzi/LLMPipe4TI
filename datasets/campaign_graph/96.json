@@ -1,0 +1,102 @@
+{
+    "pdf_title": [
+        "threat details and protection from the carbanak malware.pdf",
+        "Anunak_APT_against_financial_institutions.pdf",
+        "Carbanak_APT_eng.pdf",
+        "the vulnerabilities and privileges of carbanak bank thieves _ beyondtrust.pdf"
+    ],
+    "num_records": 4,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Carbanak",
+                "date_start": "2013-10",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Carbanak",
+                "description": "Carbanak is a threat group that mainly targets banks. It also refers to malware of the same name (Carbanak)",
+                "labels": "crime-syndicate",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2011-12",
+                "name": "CVE-2012-0158",
+                "baseScore": "9.3",
+                "publishedDate": "2012-04",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2014-01",
+                "name": "CVE-2014-1761",
+                "baseScore": "9.3",
+                "publishedDate": "2014-03",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2013-06",
+                "name": "CVE-2013-3906",
+                "baseScore": "9.3",
+                "publishedDate": "2013-11",
+                "id": "vulnerability3"
+            },
+            {
+                "reservedDate": "2012-05",
+                "name": "CVE-2012-2539",
+                "baseScore": "9.3",
+                "publishedDate": "2012-12",
+                "id": "vulnerability4"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

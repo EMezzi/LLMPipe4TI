@@ -1,0 +1,65 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.68144890666008
+            ],
+            "false positives": {},
+            "total_sim": 0.68144890666008
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3628978133201599
+            ],
+            "false positives": {},
+            "total_sim": 0.3628978133201599
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "SWIFT system exploitation",
+                    "id": "attack_vector1"
+                }
+            }
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2015-2568",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5221733599901199
+            ],
+            "false positives": {},
+            "total_sim": 0.5221733599901199
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            }
+        }
+    }
+}

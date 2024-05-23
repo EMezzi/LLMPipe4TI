@@ -1,0 +1,81 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.7128214091062546
+            ],
+            "false positives": {},
+            "total_sim": 0.7128214091062546
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.42564281821250916
+            ],
+            "false positives": {},
+            "total_sim": 0.42564281821250916
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                1.0
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "id": "attack_vector2",
+                    "name": "unknown"
+                }
+            },
+            "total_sim": 1.0
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5692321136593819
+            ],
+            "false positives": {},
+            "total_sim": 0.5692321136593819
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.8564107045531273
+            ],
+            "false positives": {},
+            "total_sim": 0.8564107045531273
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.8564107045531273
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.8564107045531273
+        }
+    }
+}

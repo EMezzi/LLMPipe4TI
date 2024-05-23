@@ -1,0 +1,260 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.5000001192092896
+            ],
+            "false positives": {},
+            "total_sim": 0.5000001192092896
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.000000238418579
+            ],
+            "false positives": {},
+            "total_sim": 1.000000238418579
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                1.0
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "unknown",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "spearphishing via service",
+                    "id": "attack_vector3"
+                },
+                "attack_vector4": {
+                    "name": "exploit public-facing application",
+                    "id": "attack_vector4"
+                },
+                "attack_vector5": {
+                    "name": "unknown",
+                    "id": "attack_vector5"
+                },
+                "attack_vector6": {
+                    "name": "spearphishing link",
+                    "id": "attack_vector6"
+                },
+                "attack_vector7": {
+                    "name": "spearphishing email",
+                    "id": "attack_vector7"
+                },
+                "attack_vector8": {
+                    "name": "unknown",
+                    "id": "attack_vector8"
+                },
+                "attack_vector9": {
+                    "name": "spearphishing",
+                    "id": "attack_vector9"
+                },
+                "attack_vector10": {
+                    "name": "spearphishing email",
+                    "id": "attack_vector10"
+                },
+                "attack_vector11": {
+                    "name": "spearphishing attachment",
+                    "id": "attack_vector11"
+                },
+                "attack_vector12": {
+                    "name": "unknown",
+                    "id": "attack_vector12"
+                },
+                "attack_vector13": {
+                    "name": "spearphishing",
+                    "id": "attack_vector13"
+                },
+                "attack_vector14": {
+                    "name": "spearphishing email",
+                    "id": "attack_vector14"
+                },
+                "attack_vector15": {
+                    "name": "unknown",
+                    "id": "attack_vector15"
+                },
+                "attack_vector16": {
+                    "name": "spearphishing",
+                    "id": "attack_vector16"
+                },
+                "attack_vector17": {
+                    "name": "spearphishing email",
+                    "id": "attack_vector17"
+                },
+                "attack_vector18": {
+                    "name": "spearphishing link",
+                    "id": "attack_vector18"
+                },
+                "attack_vector19": {
+                    "name": "spearphishing attachment",
+                    "id": "attack_vector19"
+                },
+                "attack_vector20": {
+                    "name": "unknown",
+                    "id": "attack_vector20"
+                }
+            },
+            "total_sim": 1.0
+        },
+        "vulnerability": {
+            "vulnerability1": [],
+            "false positives": {
+                "vulnerability1": {
+                    "name": "unknown",
+                    "id": "vulnerability1"
+                },
+                "vulnerability2": {
+                    "name": "CVE-2017-11882",
+                    "id": "vulnerability2"
+                },
+                "vulnerability3": {
+                    "name": "CVE-2018-0802",
+                    "id": "vulnerability3"
+                },
+                "vulnerability4": {
+                    "name": "unknown",
+                    "id": "vulnerability4"
+                },
+                "vulnerability5": {
+                    "name": "unknown",
+                    "id": "vulnerability5"
+                }
+            },
+            "total_sim": 0.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.7500001788139343
+            ],
+            "false positives": {},
+            "total_sim": 0.7500001788139343
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.2500000596046448
+            ],
+            "false positives": {
+                "targets2": [
+                    "campaign1",
+                    "vulnerability2"
+                ],
+                "targets3": [
+                    "campaign1",
+                    "vulnerability3"
+                ],
+                "targets4": [
+                    "campaign1",
+                    "vulnerability4"
+                ],
+                "targets5": [
+                    "campaign1",
+                    "vulnerability5"
+                ]
+            },
+            "total_sim": 0.2500000596046448
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.7500000596046448
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs4": [
+                    "campaign1",
+                    "attack_vector4"
+                ],
+                "employs5": [
+                    "campaign1",
+                    "attack_vector5"
+                ],
+                "employs6": [
+                    "campaign1",
+                    "attack_vector6"
+                ],
+                "employs7": [
+                    "campaign1",
+                    "attack_vector7"
+                ],
+                "employs8": [
+                    "campaign1",
+                    "attack_vector8"
+                ],
+                "employs9": [
+                    "campaign1",
+                    "attack_vector9"
+                ],
+                "employs10": [
+                    "campaign1",
+                    "attack_vector10"
+                ],
+                "employs11": [
+                    "campaign1",
+                    "attack_vector11"
+                ],
+                "employs12": [
+                    "campaign1",
+                    "attack_vector12"
+                ],
+                "employs13": [
+                    "campaign1",
+                    "attack_vector13"
+                ],
+                "employs14": [
+                    "campaign1",
+                    "attack_vector14"
+                ],
+                "employs15": [
+                    "campaign1",
+                    "attack_vector15"
+                ],
+                "employs16": [
+                    "campaign1",
+                    "attack_vector16"
+                ],
+                "employs17": [
+                    "campaign1",
+                    "attack_vector17"
+                ],
+                "employs18": [
+                    "campaign1",
+                    "attack_vector18"
+                ],
+                "employs19": [
+                    "campaign1",
+                    "attack_vector19"
+                ],
+                "employs20": [
+                    "campaign1",
+                    "attack_vector20"
+                ]
+            },
+            "total_sim": 0.7500000596046448
+        }
+    }
+}

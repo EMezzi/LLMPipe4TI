@@ -1,0 +1,100 @@
+{
+    "pdf_title": [
+        "talos blog __ cisco talos intelligence group - comprehensive threat intelligence_ multiple cobalt personality disorder.pdf",
+        "new bank cyber attacks_ 2018.pdf"
+    ],
+    "num_records": 4,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Cobalt Group",
+                "date_start": "2018-06",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Cobalt Group",
+                "description": "Cobalt Group is a financially motivated threat group that has primarily targeted financial institutions",
+                "labels": "crime-syndicate",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2017-05",
+                "name": "CVE-2017-8570",
+                "baseScore": "7.8",
+                "publishedDate": "2017-07",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2018-03",
+                "name": "CVE-2018-8174",
+                "baseScore": "7.5",
+                "publishedDate": "2018-05",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2017-07",
+                "name": "CVE-2017-11882",
+                "baseScore": "7.8",
+                "publishedDate": "2017-11",
+                "id": "vulnerability3"
+            },
+            {
+                "reservedDate": "2017-12",
+                "name": "CVE-2018-0802",
+                "baseScore": "7.8",
+                "publishedDate": "2018-01",
+                "id": "vulnerability4"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

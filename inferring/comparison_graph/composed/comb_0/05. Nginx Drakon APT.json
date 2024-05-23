@@ -1,0 +1,99 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "98.23.182.25",
+                "id": "s1"
+            },
+            {
+                "name": "108.192.100.31",
+                "id": "s2"
+            },
+            {
+                "name": "ta1-pivot-2",
+                "id": "s3"
+            },
+            {
+                "name": "128.55.12.167",
+                "id": "s4"
+            },
+            {
+                "name": "128.55.12.233",
+                "id": "s5"
+            },
+            {
+                "name": "128.55.12.75",
+                "id": "s6"
+            },
+            {
+                "name": "128.55.12.51",
+                "id": "s7"
+            }
+        ],
+        "victim": [
+            {
+                "name": "ta1-cadets-1",
+                "id": "v1"
+            },
+            {
+                "name": "CADETS",
+                "id": "v2"
+            }
+        ],
+        "related file": [
+            {
+                "name": "/etc/password",
+                "id": "f1"
+            }
+        ],
+        "threat actor": [],
+        "tool": [
+            {
+                "name": "Drakon APT",
+                "id": "t1"
+            },
+            {
+                "name": "Nginx Drakon APT simulacrum",
+                "id": "t2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Remote code execution on the listening port of the webserver TCP 80",
+                "id": "vul1"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "98.23.182.25:80, connection, Drakon APT": "s1, connection, t1"
+        },
+        {
+            "108.192.100.31:80, connection, C2": "s2, connection, C2"
+        },
+        {
+            "ta1-pivot-2, connection, C2": "s3, connection, C2"
+        },
+        {
+            "128.55.12.167, connection, C2": "s4, connection, C2"
+        },
+        {
+            "128.55.12.167, connection, 128.55.12.233:80": "s4, connection, s5"
+        },
+        {
+            "ta1-cadets-1, connection, /etc/password": "v1, connection, f1"
+        },
+        {
+            "CADETS, connection, /etc/password": "v2, connection, f1"
+        },
+        {
+            "Nginx Drakon APT simulacrum, connection, Remote code execution on the listening port of the webserver TCP 80": "t2, connection, vul1"
+        },
+        {
+            "128.55.12.75:80, connection, C2": "s6, connection, C2"
+        },
+        {
+            "128.55.12.51:80, connection, C2": "s7, connection, C2"
+        }
+    ]
+}

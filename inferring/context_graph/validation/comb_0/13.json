@@ -1,0 +1,31 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": [
+                    "APT38",
+                    "Lazarus Group"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "North Korea",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "targets": [],
+        "uses": []
+    }
+}

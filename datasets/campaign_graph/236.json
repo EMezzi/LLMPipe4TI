@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "Clearsky-Iranian-APT-group-‘MuddyWater’-Adds-Exploits-to-Their-Arsenal.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "MuddyWater",
+                "date_start": "2019-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "MuddyWater",
+                "description": "MuddyWater is an APT group that has been active throughout 2017, targeting victims in Middle East",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0199",
+                "baseScore": "7.8",
+                "publishedDate": "2017-04",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.27239498496055603
+            ],
+            "false positives": {},
+            "total_sim": 0.27239498496055603
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.32569754123687744
+            ],
+            "false positives": {},
+            "total_sim": 0.32569754123687744
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.764691948890686
+            ],
+            "false positives": {},
+            "total_sim": 0.764691948890686
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2012-0507",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.29904626309871674
+            ],
+            "false positives": {},
+            "total_sim": 0.29904626309871674
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.518543466925621
+            ],
+            "false positives": {},
+            "total_sim": 0.518543466925621
+        }
+    }
+}

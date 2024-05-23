@@ -1,0 +1,79 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.219855397939682
+            ],
+            "false positives": {},
+            "total_sim": 0.219855397939682
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.439710795879364
+            ],
+            "false positives": {},
+            "total_sim": 0.439710795879364
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.5932427048683167
+            ],
+            "attack_vector2": [
+                "attack_vector1",
+                0.661272406578064
+            ],
+            "false positives": {},
+            "total_sim": 0.6272575557231903
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "Undefined CVE",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.329783096909523
+            ],
+            "false positives": {},
+            "total_sim": 0.329783096909523
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.40654905140399933
+            ],
+            "employs2": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.440563902258873
+            ],
+            "false positives": {},
+            "total_sim": 0.42355647683143616
+        }
+    }
+}

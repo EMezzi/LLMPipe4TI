@@ -1,0 +1,81 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6561104357242584
+            ],
+            "false positives": {},
+            "total_sim": 0.6561104357242584
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.31222087144851685
+            ],
+            "false positives": {},
+            "total_sim": 0.31222087144851685
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.43817901611328125
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Crafted Flash content in PDF",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.43817901611328125
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.48416565358638763
+            ],
+            "false positives": {},
+            "total_sim": 0.48416565358638763
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.8280552178621292
+            ],
+            "false positives": {},
+            "total_sim": 0.8280552178621292
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.5471447259187698
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.5471447259187698
+        }
+    }
+}

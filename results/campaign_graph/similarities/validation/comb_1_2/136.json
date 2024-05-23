@@ -1,0 +1,51 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.15117709338665009
+            ],
+            "false positives": {},
+            "total_sim": 0.15117709338665009
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.30235418677330017
+            ],
+            "false positives": {},
+            "total_sim": 0.30235418677330017
+        },
+        "attack_vector": {
+            "false positives": {
+                "attack_vector1": {
+                    "name": "phishing emails",
+                    "id": "attack_vector1"
+                }
+            }
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.22676564007997513
+            ],
+            "false positives": {},
+            "total_sim": 0.22676564007997513
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            }
+        }
+    }
+}

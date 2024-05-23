@@ -1,0 +1,90 @@
+{
+    "pdf_title": [
+        "apt28_ cybercrime or state-sponsored hacking_.pdf",
+        "sednit espionage group now using custom exploit kit _ welivesecurity.pdf",
+        "operation russiandoll_ adobe _ windows zero-day exploits likely leveraged by russia’s apt28 in highly-targeted attack _ fireeye inc.pdf"
+    ],
+    "num_records": 3,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT28",
+                "date_start": "2015-04",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT28",
+                "description": "APT 28 is a threat group that has been attributed to Russia’s Main Intelligence Directorate of the Russian General Staff",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Link",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2015-02",
+                "name": "CVE-2015-1701",
+                "baseScore": "7.2",
+                "publishedDate": "2015-04",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2014-01",
+                "name": "CVE-2014-1761",
+                "baseScore": "9.3",
+                "publishedDate": "2014-03",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2015-04",
+                "name": "CVE-2015-3043",
+                "baseScore": "10",
+                "publishedDate": "2015-04",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

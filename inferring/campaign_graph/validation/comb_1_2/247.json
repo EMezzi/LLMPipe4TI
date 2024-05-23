@@ -1,0 +1,71 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "OilRig"
+                ],
+                "date_start": [
+                    "2018-06",
+                    "2016-07",
+                    "2018-05"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "OilRig"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spear phishing email",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "malicious macro document",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "PE file attachment",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "decoy dialog box",
+                "id": "attack_vector4"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ]
+        ]
+    }
+}

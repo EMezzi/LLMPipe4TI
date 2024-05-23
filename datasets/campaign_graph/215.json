@@ -1,0 +1,81 @@
+{
+    "pdf_title": [
+        "Leviathan, Espionage Actor Targets Defense & Government.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Leviathan",
+                "date_start": "2017-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Leviathan",
+                "description": "Leviathan is a cyber espionage group that has been active since at least 2013. The group generally targets defense and government organizations",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Link",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS']",
+                "tactic": "initial-access",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2017-05",
+                "name": "CVE-2017-8759",
+                "baseScore": "7.8",
+                "publishedDate": "2017-09",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

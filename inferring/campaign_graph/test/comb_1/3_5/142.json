@@ -1,0 +1,84 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Dragonfly 2.0",
+                    "Dragonfly"
+                ],
+                "date_start": [
+                    "2013-02",
+                    "2014-04",
+                    "2013-06",
+                    "2013-05"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Dragonfly 2.0",
+                    "Dragonfly"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2013-3660",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2010-0232",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

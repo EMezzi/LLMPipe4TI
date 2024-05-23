@@ -1,0 +1,78 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9510544240474701
+            ],
+            "false positives": {},
+            "total_sim": 0.9510544240474701
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.9021088480949402
+            ],
+            "false positives": {},
+            "total_sim": 0.9021088480949402
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.6355882883071899
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Malicious Word Document",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.6355882883071899
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.9265816360712051
+            ],
+            "false positives": {},
+            "total_sim": 0.9265816360712051
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.79332135617733
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.79332135617733
+        }
+    }
+}

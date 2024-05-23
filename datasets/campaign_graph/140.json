@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "kingdom targeted by new malware _ phnom penh post.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "DragonOK",
+                "date_start": "2017-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "DragonOK",
+                "description": "DragonOK is a threat group that has targeted Japanese organizations with phishing emails",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

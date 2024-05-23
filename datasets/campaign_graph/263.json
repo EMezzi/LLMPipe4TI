@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "microsoft word intruder 8 adds support for flash vulnerability cve-2016-4117 _ proofpoint.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "RTM",
+                "date_start": "2016-10",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "RTM",
+                "description": "RTM is a cybercriminal group that has been active since at least 2015 and is primarily interested in users of remote banking systems in Russia and neighboring countries",
+                "goals": "financial gain",
+                "labels": "criminal",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "Unknown",
+                "effective_permissions": "Unknown",
+                "permissions": "Unknown",
+                "name": "Unknown",
+                "remote": "Unknown",
+                "tactic": "Unknown",
+                "network": "Unknown",
+                "platforms": "Unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-04",
+                "name": "CVE-2016-4117",
+                "baseScore": "9.8",
+                "publishedDate": "2016-05",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

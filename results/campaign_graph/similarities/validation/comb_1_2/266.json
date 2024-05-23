@@ -1,0 +1,78 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9999999105930328
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999105930328
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.9999998211860657
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998211860657
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.6217422485351562
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "weaponized Microsoft Excel document with malicious macro",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.6217422485351562
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2018-0802",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.9999998658895493
+            ],
+            "false positives": {},
+            "total_sim": 0.9999998658895493
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.8108710795640945
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.8108710795640945
+        }
+    }
+}

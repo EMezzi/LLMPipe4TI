@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "elfin_ relentless espionage group targets multiple organizations in saudi arabia and u.s. _ symantec blogs.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT33",
+                "date_start": "2019-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT33",
+                "description": "APT33 has targeted organizations in the United States, Saudi Arabia and South Korea. APT33 has shown particular interest in organizations in the aviation sector involved in both military and commercial capacities, as well as organizations in the energy sector",
+                "goals": "espionage,sabotage",
+                "labels": "nation-state",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2018-12",
+                "name": "CVE-2018-20250",
+                "baseScore": "7.8",
+                "publishedDate": "2019-02",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

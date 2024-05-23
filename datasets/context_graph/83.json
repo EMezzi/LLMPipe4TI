@@ -1,0 +1,67 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "admin@338",
+                "description": "The threat group has previously used newsworthy events as lures to deliver malware",
+                "labels": "activist",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2009-4324",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ]
+        ]
+    }
+}

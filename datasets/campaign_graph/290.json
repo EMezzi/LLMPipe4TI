@@ -1,0 +1,88 @@
+{
+    "pdf_title": [
+        "the million dollar dissident_ nso group_s iphone zero-days used against a uae human rights defender - the citizen lab.pdf"
+    ],
+    "num_records": 3,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Stealth Falcon",
+                "date_start": "2016-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Stealth Falcon",
+                "description": "Stealth Falcon is a threat group that has conducted targeted spyware attacks against Emirati journalists, activists, and dissidents since at least 2012",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing via Service",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-05",
+                "name": "CVE-2016-4655",
+                "baseScore": "5.5",
+                "publishedDate": "2016-08",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2016-05",
+                "name": "CVE-2016-4656",
+                "baseScore": "7.8",
+                "publishedDate": "2016-08",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2016-05",
+                "name": "CVE-2016-4657",
+                "baseScore": "8.8",
+                "publishedDate": "2016-08",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

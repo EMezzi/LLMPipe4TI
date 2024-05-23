@@ -1,0 +1,56 @@
+{
+    "pdf_title": [
+        "Trend Micro antivirus zero-day used in Mitsubishi Electric hack | ZDNET.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "BRONZE BUTLER",
+                "date_start": "2019-06",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "BRONZE BUTLER",
+                "description": "Bronze Bulter primarily targets organizations located in Japan. The threat group has sought unauthorized access to networks of organizations",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "exploit public-facing application",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2019-18187",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

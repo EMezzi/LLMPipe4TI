@@ -1,0 +1,110 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6547451019287109
+            ],
+            "false positives": {},
+            "total_sim": 0.6547451019287109
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3094902038574219
+            ],
+            "false positives": {},
+            "total_sim": 0.3094902038574219
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.661272406578064
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Remote Access",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "Control & Operate",
+                    "id": "attack_vector3"
+                },
+                "attack_vector4": {
+                    "name": "VPN Access",
+                    "id": "attack_vector4"
+                },
+                "attack_vector5": {
+                    "name": "Data Exfiltration",
+                    "id": "attack_vector5"
+                },
+                "attack_vector6": {
+                    "name": "Tools and Technology Impacts",
+                    "id": "attack_vector6"
+                }
+            },
+            "total_sim": 0.661272406578064
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-yyyy-",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.4821176528930664
+            ],
+            "false positives": {},
+            "total_sim": 0.4821176528930664
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.6580087542533875
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs4": [
+                    "campaign1",
+                    "attack_vector4"
+                ],
+                "employs5": [
+                    "campaign1",
+                    "attack_vector5"
+                ],
+                "employs6": [
+                    "campaign1",
+                    "attack_vector6"
+                ]
+            },
+            "total_sim": 0.6580087542533875
+        }
+    }
+}

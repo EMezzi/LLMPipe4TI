@@ -1,0 +1,129 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.17525407671928406
+            ],
+            "false positives": {},
+            "total_sim": 0.17525407671928406
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3505081534385681
+            ],
+            "false positives": {},
+            "total_sim": 0.3505081534385681
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.7973973751068115
+            ],
+            "attack_vector2": [
+                "attack_vector4",
+                0.41014838218688965
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Watering Hole Domains",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "VPN Software",
+                    "id": "attack_vector3"
+                },
+                "attack_vector5": {
+                    "name": "Downloader",
+                    "id": "attack_vector5"
+                },
+                "attack_vector6": {
+                    "name": "Persistence Through .LNK File Manipulation",
+                    "id": "attack_vector6"
+                },
+                "attack_vector7": {
+                    "name": "Scheduled Task",
+                    "id": "attack_vector7"
+                },
+                "attack_vector8": {
+                    "name": "Malicious Use of Legitimate Credentials",
+                    "id": "attack_vector8"
+                }
+            },
+            "total_sim": 0.6037728786468506
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "Vulnerability Note #672268",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.2628811150789261
+            ],
+            "false positives": {},
+            "total_sim": 0.2628811150789261
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.4863257259130478
+            ],
+            "employs2": [
+                [
+                    "campaign1",
+                    "attack_vector4"
+                ],
+                0.29270122945308685
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs5": [
+                    "campaign1",
+                    "attack_vector5"
+                ],
+                "employs6": [
+                    "campaign1",
+                    "attack_vector6"
+                ],
+                "employs7": [
+                    "campaign1",
+                    "attack_vector7"
+                ],
+                "employs8": [
+                    "campaign1",
+                    "attack_vector8"
+                ]
+            },
+            "total_sim": 0.3895134776830673
+        }
+    }
+}

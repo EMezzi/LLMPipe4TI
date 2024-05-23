@@ -1,0 +1,104 @@
+{
+    "pdf_title": [
+        "new spear phishing campaign pretends to be eff _ electronic frontier foundation.pdf",
+        "microsoft patches office zero-day bug used by apt group _ securityweek.com.pdf"
+    ],
+    "num_records": 6,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT28",
+                "date_start": "2015-07",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT28",
+                "description": "APT 28 is a threat group that has been attributed to Russia’s Main Intelligence Directorate of the Russian General Staff",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "['User']",
+                "name": "Drive-by Compromise",
+                "remote": "None",
+                "tactic": "initial-access",
+                "network": "None",
+                "platforms": "['Windows', 'Linux', 'macOS', 'SaaS']",
+                "id": "attack_vector1"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Link",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS']",
+                "tactic": "initial-access",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2015-06",
+                "name": "CVE-2015-4902",
+                "baseScore": "5",
+                "publishedDate": "2015-10",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2015-03",
+                "name": "CVE-2015-2590",
+                "baseScore": "10",
+                "publishedDate": "2015-07",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2015-03",
+                "name": "CVE-2015-2424",
+                "baseScore": "9.3",
+                "publishedDate": "2015-07",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

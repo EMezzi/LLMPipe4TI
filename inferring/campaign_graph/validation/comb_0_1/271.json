@@ -1,0 +1,96 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "E-ISAC"
+                ],
+                "date_start": [
+                    "2015-12",
+                    "2016-03"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "E-ISAC"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spear Phishing",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Remote Access",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Control & Operate",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "VPN Access",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Data Exfiltration",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "Tools and Technology Impacts",
+                "id": "attack_vector6"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-yyyy-",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ]
+        ]
+    }
+}

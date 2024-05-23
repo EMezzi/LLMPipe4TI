@@ -1,0 +1,67 @@
+{
+    "pdf_title": [
+        "japanese word processor _ichitaro_ zero-day attack discovered in the wild.pdf",
+        "yet another zero-day_ japan hit with ichitaro vulnerability _ symantec connect community.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT12",
+                "date_start": "2013-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT12",
+                "description": "Numbered Panda has targeted a variety of victims including but not limited to media outlets, high-tech companies, and multiple governments",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "Unknown",
+                "effective_permissions": "Unknown",
+                "permissions": "Unknown",
+                "name": "Unknown",
+                "remote": "Unknown",
+                "tactic": "Unknown",
+                "network": "Unknown",
+                "platforms": "Unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2013-10",
+                "name": "CVE-2013-5990",
+                "baseScore": "9.3",
+                "publishedDate": "2013-11",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

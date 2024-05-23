@@ -1,0 +1,30 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Conti",
+                "date_start": [
+                    "unknown"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Conti",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "RDP",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": []
+    }
+}

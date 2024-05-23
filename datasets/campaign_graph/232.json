@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "Muddying the Water - Targeted Attacks in the Middle East.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "MuddyWater",
+                "date_start": "2017-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "MuddyWater",
+                "description": "MuddyWater is an APT group that has been active throughout 2017, targeting victims in Middle East",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

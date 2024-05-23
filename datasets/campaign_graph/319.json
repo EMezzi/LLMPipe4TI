@@ -1,0 +1,123 @@
+{
+    "pdf_title": [
+        "waterbug-attack-group.pdf",
+        "CVE-2009-3129_threat landscape dashboard _ mcafee.pdf",
+        "CVE-2013-2729_threat landscape dashboard _ mcafee.pdf"
+    ],
+    "num_records": 6,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Turla",
+                "date_start": "2013-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Turla",
+                "description": "Turla is a Russian-based threat group that has infected victims in over 45 countries, spanning a range of industries including government, embassies, military, education, research and pharmaceutical companies since 2004",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2013-03",
+                "name": "CVE-2013-2729",
+                "baseScore": "10",
+                "publishedDate": "2013-05",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2009-09",
+                "name": "CVE-2009-3129",
+                "baseScore": "9.3",
+                "publishedDate": "2009-11",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2013-08",
+                "name": "CVE-2013-5065",
+                "baseScore": "7.2",
+                "publishedDate": "2013-11",
+                "id": "vulnerability3"
+            },
+            {
+                "reservedDate": "2009-03",
+                "name": "CVE-2009-1125",
+                "baseScore": "7.2",
+                "publishedDate": "2009-06",
+                "id": "vulnerability4"
+            },
+            {
+                "reservedDate": "2013-05",
+                "name": "CVE-2013-3346",
+                "baseScore": "10",
+                "publishedDate": "2013-08",
+                "id": "vulnerability5"
+            },
+            {
+                "reservedDate": "2010-01",
+                "name": "CVE-2010-0232",
+                "baseScore": "7.2",
+                "publishedDate": "2010-01",
+                "id": "vulnerability6"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ],
+            [
+                "campaign1",
+                "vulnerability6"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

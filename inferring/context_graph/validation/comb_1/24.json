@@ -1,0 +1,48 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": [
+                    "Darkhotel"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "North Korea",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": [
+            {
+                "name": "CVE-2018-8174",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2015-2545",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ]
+        ],
+        "uses": []
+    }
+}

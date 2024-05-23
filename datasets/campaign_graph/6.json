@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "darwin’s favorite apt group _ fireeye inc.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT12",
+                "date_start": "2014-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT12",
+                "description": "Numbered Panda has targeted a variety of victims including but not limited to media outlets, high-tech companies, and multiple governments",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2011-12",
+                "name": "CVE-2012-0158",
+                "baseScore": "9.3",
+                "publishedDate": "2012-04",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

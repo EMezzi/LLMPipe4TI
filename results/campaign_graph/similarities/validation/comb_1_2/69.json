@@ -1,0 +1,24 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.09165439009666443
+            ],
+            "false positives": {},
+            "total_sim": 0.09165439009666443
+        },
+        "APT": {},
+        "attack_vector": "No ground truth and no false positives",
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [],
+            "false positives": {},
+            "total_sim": 0.0
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": "No relations to pair and no false positives"
+    }
+}

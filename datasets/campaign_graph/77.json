@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "apt39 hacking group launch widespread attack focused on pi.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT39",
+                "date_start": "2018-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT39",
+                "description": "APT39 have targeted the telecommunication and travel industries to collect personal information that aligns with Iran's national priorities",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

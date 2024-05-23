@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "silverterrier-next-evolution-in-nigerian-cybercrime.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "SilverTerrier",
+                "date_start": "2014-07",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "SilverTerrier",
+                "description": "SilverTerrier is a Nigerian threat group that has been seen active since 2014. SilverTerrier mainly targets organizations in high technology, higher education, and manufacturing",
+                "labels": "criminal",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

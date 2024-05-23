@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "hbo breach accomplished with hard work by hacker_ poor security practices by victim _ sc media.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Charming Kitten",
+                "date_start": "2017-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Charming Kitten",
+                "description": "Charming Kitten is an Iranian cyberespionage group that to focus on targeting individuals of interest to Iran who work in academic research, human rights, and media",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

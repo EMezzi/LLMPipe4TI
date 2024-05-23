@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "the gorgon group_ slithering between nation state and cybercrime.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Gorgon Group",
+                "date_start": "2018-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Gorgon Group",
+                "description": "Gorgon Group is a threat group consisting of members who are suspected to be Pakistan-based or have other connections to Pakistan",
+                "goals": "espionage,financial gain",
+                "labels": "nation-state",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

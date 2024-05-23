@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "contagio_ cve-2011-0609 - adobe flash player zeroday - update.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT12",
+                "date_start": "2011-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT12",
+                "description": "Numbered Panda has targeted a variety of victims including but not limited to media outlets, high-tech companies, and multiple governments",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2011-01",
+                "name": "CVE-2011-0609",
+                "baseScore": "9.3",
+                "publishedDate": "2011-03",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

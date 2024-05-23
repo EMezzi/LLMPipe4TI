@@ -1,0 +1,78 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9999999105930328
+            ],
+            "false positives": {},
+            "total_sim": 0.9999999105930328
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.2656940817832947
+            ],
+            "false positives": {},
+            "total_sim": 0.2656940817832947
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.5602626800537109
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Spam Emails",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.5602626800537109
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2017-0199",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.6328469961881638
+            ],
+            "false positives": {},
+            "total_sim": 0.6328469961881638
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.7801312953233719
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.7801312953233719
+        }
+    }
+}

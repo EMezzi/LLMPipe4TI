@@ -1,0 +1,112 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Russian Government Cyber Activity"
+                ],
+                "date_start": [
+                    "2016-03",
+                    "2016-05"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Russian Government Cyber Activity"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spear-Phishing Emails",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Watering Hole Domains",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "VPN Software",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Password Cracking Tools",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Downloader",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "Persistence Through .LNK File Manipulation",
+                "id": "attack_vector6"
+            },
+            {
+                "name": "Scheduled Task",
+                "id": "attack_vector7"
+            },
+            {
+                "name": "Malicious Use of Legitimate Credentials",
+                "id": "attack_vector8"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Vulnerability Note #672268",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ],
+            [
+                "campaign1",
+                "attack_vector7"
+            ],
+            [
+                "campaign1",
+                "attack_vector8"
+            ]
+        ]
+    }
+}

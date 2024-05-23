@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "_state-sponsored_ hackers targeted eirgrid electricity network in _devious attack_ - independent.ie.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "state-sponsored hackers",
+                "date_start": "2017-04",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "state-sponsored hackers",
+                "description": "Dragonfly is a cyberespionage group that has been active since at least 2011. They initially targeted defense and aviation companies but shifted to focus on the energy sector in early 2013",
+                "labels": "crime-syndicate",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

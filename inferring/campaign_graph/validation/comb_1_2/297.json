@@ -1,0 +1,90 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "ProjectSauron",
+                    "Strider"
+                ],
+                "date_start": [
+                    "2015-09",
+                    "2011-06"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "ProjectSauron",
+                    "Strider"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "air-gapped networks - USB storage drives",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Malware Deployment through software update scripts",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Email - Data Exfiltration",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "DNS Tunneling",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Malware Deployment through script modification",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Unknown",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

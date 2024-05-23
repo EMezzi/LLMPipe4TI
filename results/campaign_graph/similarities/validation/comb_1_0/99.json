@@ -1,0 +1,78 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6616955548524857
+            ],
+            "false positives": {},
+            "total_sim": 0.6616955548524857
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3233911097049713
+            ],
+            "false positives": {},
+            "total_sim": 0.3233911097049713
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.5221269130706787
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Social Engineering",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.5221269130706787
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2012-0779",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.4925433322787285
+            ],
+            "false positives": {},
+            "total_sim": 0.4925433322787285
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.5919112339615822
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.5919112339615822
+        }
+    }
+}

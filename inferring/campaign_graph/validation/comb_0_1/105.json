@@ -1,0 +1,78 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Charming Kitten"
+                ],
+                "date_start": [
+                    "2018-11",
+                    "2018-10"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Charming Kitten"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Phishing",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Fake file sharing on Google Drive",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Clickable image in emails",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Hidden tracking image on emails",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Phishing Pages",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

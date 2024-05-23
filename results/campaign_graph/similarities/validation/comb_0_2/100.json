@@ -1,0 +1,105 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.18801134824752808
+            ],
+            "false positives": {},
+            "total_sim": 0.18801134824752808
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.37602269649505615
+            ],
+            "false positives": {},
+            "total_sim": 0.37602269649505615
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.6931831240653992
+            ],
+            "attack_vector2": [
+                "attack_vector3",
+                0.3789946734905243
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "phone calls",
+                    "id": "attack_vector2"
+                },
+                "attack_vector4": {
+                    "name": "abusing account recovery mechanisms",
+                    "id": "attack_vector4"
+                },
+                "attack_vector5": {
+                    "name": "private messages",
+                    "id": "attack_vector5"
+                }
+            },
+            "total_sim": 0.5360888987779617
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-yyyy-",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.2820170223712921
+            ],
+            "false positives": {},
+            "total_sim": 0.2820170223712921
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.4405972361564636
+            ],
+            "employs2": [
+                [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                0.2835030108690262
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs4": [
+                    "campaign1",
+                    "attack_vector4"
+                ],
+                "employs5": [
+                    "campaign1",
+                    "attack_vector5"
+                ]
+            },
+            "total_sim": 0.3620501235127449
+        }
+    }
+}

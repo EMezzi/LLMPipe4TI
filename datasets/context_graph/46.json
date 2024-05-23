@@ -1,0 +1,163 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Lazarus Group",
+                "description": "Lazarus Group is commonly believed to be run by the North Korean government, motivated primarily by financial gain as a method of circumventing long-standing sanctions against the regime",
+                "goals": "espionage,financial gain,sabotage",
+                "labels": "nation-state",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "North Korea",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "exploit public-facing application",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector4"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2015-6585",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2016-7256",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2016-0189",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2016-4117",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2015-8651",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2016-1019",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2016-0034",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "cve-2017-0144",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "cve-2017-0145",
+                "id": "vulnerability9"
+            },
+            {
+                "name": "cve-2018-4878",
+                "id": "vulnerability10"
+            },
+            {
+                "name": "cve-2018-20250",
+                "id": "vulnerability11"
+            },
+            {
+                "name": "cve-2019-3396",
+                "id": "vulnerability12"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ],
+            [
+                "APT1",
+                "attack_vector4"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ],
+            [
+                "APT1",
+                "vulnerability8"
+            ],
+            [
+                "APT1",
+                "vulnerability9"
+            ],
+            [
+                "APT1",
+                "vulnerability10"
+            ],
+            [
+                "APT1",
+                "vulnerability11"
+            ],
+            [
+                "APT1",
+                "vulnerability12"
+            ]
+        ]
+    }
+}

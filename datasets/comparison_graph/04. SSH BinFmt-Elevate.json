@@ -1,0 +1,30 @@
+{
+  "title": "04. SSH BinFmt-Elevate",
+  "url": "https://github.com/darpa-i2o/Transparent-Computing",
+  "text": "Copied files via SCP and connected via SSH from the ta1-pivot-2 host. Sent files to the target included the privilege escalation driver load_helper and an elevate client. Connected to target using SSH with stolen credentials. Loaded the driver, and used it to gain root privileges. As root, exfil’d /etc/passwd, /etc/shadow, and the admin’s home directory Documents files.",
+  "val_meta": {
+    "server": [
+      "ta1-pivot-2"
+    ],
+    "victim": [],
+    "related_file": [
+      "/etc/passwd",
+      "/etc/shadow"
+    ],
+    "threat_actor": [],
+    "tool": [
+      "load_helper",
+      "SCP",
+      "SSH"
+    ],
+    "vulnerability": []
+  },
+  "val_triples": [
+    "(04. SSH BinFmt-Elevate, has_related_file, /etc/passwd)",
+    "(04. SSH BinFmt-Elevate, has_related_file, /etc/shadow)",
+    "(04. SSH BinFmt-Elevate, has_server, ta1-pivot-2)",
+    "(04. SSH BinFmt-Elevate, uses, load_helper)",
+    "(04. SSH BinFmt-Elevate, uses, SCP)",
+    "(04. SSH BinFmt-Elevate, uses, SSH)"
+  ]
+}

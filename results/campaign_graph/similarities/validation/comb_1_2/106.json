@@ -1,0 +1,72 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.7144602835178375
+            ],
+            "false positives": {},
+            "total_sim": 0.7144602835178375
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.42892056703567505
+            ],
+            "false positives": {},
+            "total_sim": 0.42892056703567505
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.8091340661048889
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "decoy website impersonation (Google services)",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "phishing website impersonating non-google services (e.g., Instagram)",
+                    "id": "attack_vector3"
+                }
+            },
+            "total_sim": 0.8091340661048889
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5716904252767563
+            ],
+            "false positives": {},
+            "total_sim": 0.5716904252767563
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.7617971748113632
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ]
+            },
+            "total_sim": 0.7617971748113632
+        }
+    }
+}

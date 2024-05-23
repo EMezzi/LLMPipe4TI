@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "apt15 is alive and strong_ an analysis of royalcli and royaldns.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Ke3chang",
+                "date_start": "2016-04",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Ke3chang",
+                "description": "Ke3chang is a threat group attributed to actors operating out of China. Ke3chang has targeted several industries, including oil, government, military",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "external remote services",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

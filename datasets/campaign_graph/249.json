@@ -1,0 +1,77 @@
+{
+    "pdf_title": [
+        "Platinum feature article - Targeted attacks in South and Southeast Asia April 2016.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "PLATINUM",
+                "date_start": "2013-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "PLATINUM",
+                "description": "PLATINUM is an activity group that has targeted victims since at least 2009. The group has focused on targets associated with governments and related organizations in South and Southeast Asia",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2014-02",
+                "name": "CVE-2013-7331",
+                "baseScore": "4.3",
+                "publishedDate": "2014-02",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2013-01",
+                "name": "CVE-2013-1331",
+                "baseScore": "9.3",
+                "publishedDate": "2013-06",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

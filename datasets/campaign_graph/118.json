@@ -1,0 +1,67 @@
+{
+    "pdf_title": [
+        "new threat actor group darkhydrus targets middle east government.pdf",
+        "奇安信威胁情报中心.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "DarkHydrus",
+                "date_start": "2018-07",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "DarkHydrus",
+                "description": "DarkHydrus is a threat group that has targeted government agencies and educational institutions in the Middle East since at least 2016",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2018-03",
+                "name": "CVE-2018-8414",
+                "baseScore": "8.8",
+                "publishedDate": "2018-08",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

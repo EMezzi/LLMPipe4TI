@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "CVE-2014-1761 - The Alley of Compromise - crowdstrike.com.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Taidoor",
+                "date_start": "2014-03",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Taidoor",
+                "description": "Taidoor is a threat group that has operated since at least 2009 and has primarily targeted the Taiwanese government.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2014-01",
+                "name": "CVE-2014-1761",
+                "baseScore": "9.3",
+                "publishedDate": "2014-03",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

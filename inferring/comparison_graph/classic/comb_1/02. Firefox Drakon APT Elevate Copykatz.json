@@ -1,0 +1,29 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "ta51",
+                "date_start": [],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "ta51",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-YYYY-0001",
+                "id": "vulnerability1"
+            }
+        ]
+    }
+}

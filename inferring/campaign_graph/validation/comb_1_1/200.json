@@ -1,0 +1,105 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Lazarus Group",
+                    "APT38"
+                ],
+                "date_start": [
+                    "2014-11"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Lazarus Group",
+                    "APT38"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Spear phishing",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Zero-day exploit",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "HWP vulnerability",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Open Type Font (CVE-2016-7256) vulnerability",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "VBScript vulnerability (CVE-2016-0189)",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2015-2545",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "HWP vulnerability (CVE-2015-6585)",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "EPS vulnerability (CVE-2015-2545)",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

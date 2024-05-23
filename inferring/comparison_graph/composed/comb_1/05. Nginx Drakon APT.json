@@ -1,0 +1,109 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "98.23.182.25",
+                "id": "S1"
+            },
+            {
+                "name": "108.192.100.31",
+                "id": "S2"
+            },
+            {
+                "name": "ta1-pivot-2",
+                "id": "S3"
+            },
+            {
+                "name": "128.55.12.167",
+                "id": "S4"
+            },
+            {
+                "name": "128.55.12.233",
+                "id": "S5"
+            },
+            {
+                "name": "128.55.12.75",
+                "id": "S6"
+            },
+            {
+                "name": "128.55.12.51",
+                "id": "S7"
+            }
+        ],
+        "victim": [
+            {
+                "name": "CADETS",
+                "id": "V1"
+            }
+        ],
+        "related file": [
+            {
+                "name": "/etc/password",
+                "id": "F1"
+            }
+        ],
+        "threat actor": [],
+        "tool": [
+            {
+                "name": "Drakon APT",
+                "id": "T1"
+            },
+            {
+                "name": "Nginx Drakon APT simulacrum",
+                "id": "T2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Remote code execution",
+                "id": "V2"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "S1": "attacked using",
+            "T1": "to download Drakon APT"
+        },
+        {
+            "S2": "used for",
+            "T1": "C2"
+        },
+        {
+            "S3": "used for",
+            "attack C2": "C2"
+        },
+        {
+            "S4": "sent HTTP POST to",
+            "S5": "resulted in C2"
+        },
+        {
+            "S4": "sent HTTP POST to",
+            "V1": "exfil'ing /etc/password"
+        },
+        {
+            "S5": "resulted in C2",
+            "S6": "callback established to"
+        },
+        {
+            "S5": "resulted in C2",
+            "S7": "callback established to"
+        },
+        {
+            "T2": "exploits",
+            "V1": "by simulation of remote code execution"
+        },
+        {
+            "V1": "by simulation of remote code execution",
+            "S6": "sent HTTP post to"
+        },
+        {
+            "V1": "by simulation of remote code execution",
+            "S7": "sent HTTP post to"
+        },
+        {
+            "S6": "sent to gather intelligence on the host environment",
+            "S7": "sent to gather intelligence on the host environment"
+        }
+    ]
+}

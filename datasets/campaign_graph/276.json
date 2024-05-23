@@ -1,0 +1,99 @@
+{
+    "pdf_title": [
+        "silence_moving-into-the-darkside.pdf"
+    ],
+    "num_records": 4,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Silence",
+                "date_start": "2017-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Silence",
+                "description": "Silence is a financially motivated threat actor targeting financial institutions in different countries. The group was first seen in June 2016. Their main targets reside in Russia, Ukraine, Belarus, Azerbaijan, Poland and Kazakhstan. They compromised various banking systems, including the Russian Central Bank's Automated Workstation Client, ATMs, and card processing.",
+                "labels": "crime-syndicate",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0263",
+                "baseScore": "7.8",
+                "publishedDate": "2017-05",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0262",
+                "baseScore": "7.8",
+                "publishedDate": "2017-05",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2008-09",
+                "name": "CVE-2008-4250",
+                "baseScore": "10",
+                "publishedDate": "2008-10",
+                "id": "vulnerability3"
+            },
+            {
+                "reservedDate": "2016-09",
+                "name": "CVE-2017-0143",
+                "baseScore": "8.1",
+                "publishedDate": "2017-03",
+                "id": "vulnerability4"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

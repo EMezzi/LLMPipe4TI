@@ -1,0 +1,81 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Turla"
+                ],
+                "date_start": [
+                    "2017-03",
+                    "2017-04",
+                    "2015-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Turla"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "EPS exploit leveraging Use-after-Free vulnerability",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Type Confusion in EPS vulnerability",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-0261",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2017-0262",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2017-0263",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

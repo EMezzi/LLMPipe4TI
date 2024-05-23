@@ -1,0 +1,64 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                1.0000001788139343
+            ],
+            "false positives": {},
+            "total_sim": 1.0000001788139343
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.0000003576278687
+            ],
+            "false positives": {},
+            "total_sim": 1.0000003576278687
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.4479478597640991
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Microsoft Office Document with a malicious macro",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.4479478597640991
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                1.0000002682209015
+            ],
+            "false positives": {},
+            "total_sim": 1.0000002682209015
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.7239740192890167
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.7239740192890167
+        }
+    }
+}

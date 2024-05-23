@@ -1,0 +1,67 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.5527078285813332
+            ],
+            "false positives": {},
+            "total_sim": 0.5527078285813332
+        },
+        "APT": {},
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.661272406578064
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "remote access",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "malicious firmware update",
+                    "id": "attack_vector3"
+                },
+                "attack_vector4": {
+                    "name": "telephonic denial-of-service",
+                    "id": "attack_vector4"
+                }
+            },
+            "total_sim": 0.661272406578064
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [],
+            "false positives": {},
+            "total_sim": 0.0
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.6069901175796986
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs4": [
+                    "campaign1",
+                    "attack_vector4"
+                ]
+            },
+            "total_sim": 0.6069901175796986
+        }
+    }
+}

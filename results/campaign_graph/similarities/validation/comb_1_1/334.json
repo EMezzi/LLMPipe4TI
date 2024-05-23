@@ -1,0 +1,211 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                1.0
+            ],
+            "false positives": {
+                "campaign2": {
+                    "actor": "th3bug",
+                    "date_start": [
+                        "2009-10"
+                    ],
+                    "id": "campaign2"
+                },
+                "campaign3": {
+                    "actor": "menuPass",
+                    "date_start": [
+                        "2009-12"
+                    ],
+                    "id": "campaign3"
+                }
+            },
+            "total_sim": 1.0
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.304784893989563
+            ],
+            "false positives": {},
+            "total_sim": 0.304784893989563
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.7896051406860352
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "strategic Web compromise",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "document/ view architecture",
+                    "id": "attack_vector3"
+                }
+            },
+            "total_sim": 0.7896051406860352
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability5",
+                1
+            ],
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2012-0158",
+                    "id": "vulnerability1"
+                },
+                "vulnerability2": {
+                    "name": "CVE-2013-0422",
+                    "id": "vulnerability2"
+                },
+                "vulnerability3": {
+                    "name": "CVE-2010-3333",
+                    "id": "vulnerability3"
+                },
+                "vulnerability4": {
+                    "name": "CVE-2011-3544",
+                    "id": "vulnerability4"
+                }
+            },
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.6523924469947815
+            ],
+            "false positives": {
+                "attributed_to2": [
+                    "campaign2",
+                    "APT1"
+                ],
+                "attributed_to3": [
+                    "campaign3",
+                    "APT1"
+                ]
+            },
+            "total_sim": 0.6523924469947815
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability5"
+                ],
+                1.0
+            ],
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                "targets2": [
+                    "campaign1",
+                    "vulnerability2"
+                ],
+                "targets3": [
+                    "campaign1",
+                    "vulnerability3"
+                ],
+                "targets4": [
+                    "campaign1",
+                    "vulnerability4"
+                ],
+                "targets6": [
+                    "campaign2",
+                    "vulnerability1"
+                ],
+                "targets7": [
+                    "campaign2",
+                    "vulnerability2"
+                ],
+                "targets8": [
+                    "campaign2",
+                    "vulnerability3"
+                ],
+                "targets9": [
+                    "campaign2",
+                    "vulnerability4"
+                ],
+                "targets10": [
+                    "campaign2",
+                    "vulnerability5"
+                ],
+                "targets11": [
+                    "campaign3",
+                    "vulnerability1"
+                ],
+                "targets12": [
+                    "campaign3",
+                    "vulnerability2"
+                ],
+                "targets13": [
+                    "campaign3",
+                    "vulnerability3"
+                ],
+                "targets14": [
+                    "campaign3",
+                    "vulnerability4"
+                ],
+                "targets15": [
+                    "campaign3",
+                    "vulnerability5"
+                ]
+            },
+            "total_sim": 1.0
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.8948025703430176
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                "employs3": [
+                    "campaign1",
+                    "attack_vector3"
+                ],
+                "employs4": [
+                    "campaign2",
+                    "attack_vector1"
+                ],
+                "employs5": [
+                    "campaign2",
+                    "attack_vector2"
+                ],
+                "employs6": [
+                    "campaign2",
+                    "attack_vector3"
+                ],
+                "employs7": [
+                    "campaign3",
+                    "attack_vector1"
+                ],
+                "employs8": [
+                    "campaign3",
+                    "attack_vector2"
+                ],
+                "employs9": [
+                    "campaign3",
+                    "attack_vector3"
+                ]
+            },
+            "total_sim": 0.8948025703430176
+        }
+    }
+}

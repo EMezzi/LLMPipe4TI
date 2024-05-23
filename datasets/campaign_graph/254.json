@@ -1,0 +1,145 @@
+{
+    "pdf_title": [
+        "Unveiling-Patchwork.pdf",
+        "forcepoint-security-labs-monsoon-analysis-report.pdf"
+    ],
+    "num_records": 16,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Patchwork",
+                "date_start": "2015-12",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Patchwork",
+                "description": "Patchwork is a cyberespionage group that was first observed in December 2015. While the group has not been definitively attributed, circumstantial evidence suggests the group may be a pro-Indian or Indian entity",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing via Service",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector2"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Link",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS']",
+                "tactic": "initial-access",
+                "id": "attack_vector3"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "['User']",
+                "name": "Drive-by Compromise",
+                "remote": "None",
+                "tactic": "initial-access",
+                "network": "None",
+                "platforms": "['Windows', 'Linux', 'macOS', 'SaaS']",
+                "id": "attack_vector4"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2014-09",
+                "name": "CVE-2014-6352",
+                "baseScore": "9.3",
+                "publishedDate": "2014-10",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2011-12",
+                "name": "CVE-2012-0158",
+                "baseScore": "9.3",
+                "publishedDate": "2012-04",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2014-06",
+                "name": "CVE-2014-4114",
+                "baseScore": "9.3",
+                "publishedDate": "2014-10",
+                "id": "vulnerability3"
+            },
+            {
+                "reservedDate": "2015-02",
+                "name": "CVE-2015-1641",
+                "baseScore": "9.3",
+                "publishedDate": "2015-04",
+                "id": "vulnerability4"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ]
+        ]
+    }
+}

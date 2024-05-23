@@ -1,0 +1,78 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9167395830154419
+            ],
+            "false positives": {},
+            "total_sim": 0.9167395830154419
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.8334791660308838
+            ],
+            "false positives": {},
+            "total_sim": 0.8334791660308838
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.7282965183258057
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "unknown",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.7282965183258057
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2017-0199",
+                    "id": "vulnerability1"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.8751093745231628
+            ],
+            "false positives": {},
+            "total_sim": 0.8751093745231628
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.8225180506706238
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.8225180506706238
+        }
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "pdf_title": [
+        "_sandworm team_ exploits zero-day bug in espionage campaign _ sc media(1).pdf"
+    ],
+    "num_records": 3,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Sandworm Team",
+                "date_start": "2014-09",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Sandworm Team",
+                "description": "Sandworm Team is a Russian cyber espionage group that has operated since approximately 2009. The group likely consists of Russian pro-hacktivists",
+                "labels": "crime-syndicate",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "Unknown",
+                "effective_permissions": "Unknown",
+                "permissions": "Unknown",
+                "name": "Unknown",
+                "remote": "Unknown",
+                "tactic": "Unknown",
+                "network": "Unknown",
+                "platforms": "Unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2014-01",
+                "name": "CVE-2014-1761",
+                "baseScore": "9.3",
+                "publishedDate": "2014-03",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2011-12",
+                "name": "CVE-2012-0158",
+                "baseScore": "9.3",
+                "publishedDate": "2012-04",
+                "id": "vulnerability2"
+            },
+            {
+                "reservedDate": "2010-09",
+                "name": "CVE-2010-3333",
+                "baseScore": "9.3",
+                "publishedDate": "2010-11",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

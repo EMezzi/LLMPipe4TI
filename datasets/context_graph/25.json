@@ -1,0 +1,67 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Deep Panda",
+                "description": "Deep Panda is a suspected Chinese threat group known to target many industries, including government, defense, financial, and telecommunications",
+                "goals": "espionage,financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2012-4792",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2012-4969",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2012-4792",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ]
+        ]
+    }
+}

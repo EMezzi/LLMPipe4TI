@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "the oilrig campaign_ attacks on saudi arabian organizations deliver helminth backdoor.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "OilRig",
+                "date_start": "2016-05",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "OilRig",
+                "description": "OilRig is a threat group with suspected Iranian origins that has targeted Middle Eastern and international victims since at least 2014",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

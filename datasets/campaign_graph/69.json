@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "special report_ cyber thieves exploit banks_ faith in swift transfer network - reuters.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "unidentified hackers",
+                "date_start": "2016-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "unidentified hackers",
+                "description": "APT 38 concentrates on stealing money",
+                "labels": "nation-state",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

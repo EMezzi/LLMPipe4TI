@@ -1,0 +1,176 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "admin@338"
+                ],
+                "date_start": [
+                    "2008-01",
+                    "2009-12"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Poison Ivy"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spear-phishing email",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "strategic Web compromise",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "document/ view architecture",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2012-0158",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2013-0422",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2010-3333",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2011-3544",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "CVE-2009-4324",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ],
+            [
+                "campaign2",
+                "APT1"
+            ],
+            [
+                "campaign3",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ],
+            [
+                "campaign2",
+                "vulnerability1"
+            ],
+            [
+                "campaign2",
+                "vulnerability2"
+            ],
+            [
+                "campaign2",
+                "vulnerability3"
+            ],
+            [
+                "campaign2",
+                "vulnerability4"
+            ],
+            [
+                "campaign2",
+                "vulnerability5"
+            ],
+            [
+                "campaign3",
+                "vulnerability1"
+            ],
+            [
+                "campaign3",
+                "vulnerability2"
+            ],
+            [
+                "campaign3",
+                "vulnerability3"
+            ],
+            [
+                "campaign3",
+                "vulnerability4"
+            ],
+            [
+                "campaign3",
+                "vulnerability5"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign2",
+                "attack_vector1"
+            ],
+            [
+                "campaign2",
+                "attack_vector2"
+            ],
+            [
+                "campaign2",
+                "attack_vector3"
+            ],
+            [
+                "campaign3",
+                "attack_vector1"
+            ],
+            [
+                "campaign3",
+                "attack_vector2"
+            ],
+            [
+                "campaign3",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

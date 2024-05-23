@@ -1,0 +1,78 @@
+{
+    "pdf_title": [
+        "zero-day in windows kernel transaction manager (cve-2018-8611) _ securelist.pdf",
+        "a new exploit for zero-day vulnerability cve-2018-8589 _ securelist.pdf"
+    ],
+    "num_records": 2,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Stealth Falcon",
+                "date_start": "2018-10",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Stealth Falcon",
+                "description": "Stealth Falcon is a threat group that has conducted targeted spyware attacks against Emirati journalists, activists, and dissidents since at least 2012",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "Unknown",
+                "effective_permissions": "Unknown",
+                "permissions": "Unknown",
+                "name": "Unknown",
+                "remote": "Unknown",
+                "tactic": "Unknown",
+                "network": "Unknown",
+                "platforms": "Unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2018-03",
+                "name": "CVE-2018-8611",
+                "baseScore": "7.8",
+                "publishedDate": "2018-12",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2018-03",
+                "name": "CVE-2018-8589",
+                "baseScore": "7.8",
+                "publishedDate": "2018-11",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

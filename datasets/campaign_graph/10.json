@@ -1,0 +1,66 @@
+{
+    "pdf_title": [
+        "20151028_codeblue_apt-en.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT17",
+                "date_start": "2013-10",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT17",
+                "description": "APT 17 is a China-based threat group that has conducted network intrusions against U.S. government entities, the defense industry, law firms, information technology companies, mining companies, and non-government organizations",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "['User']",
+                "name": "Drive-by Compromise",
+                "remote": "None",
+                "tactic": "initial-access",
+                "network": "None",
+                "platforms": "['Windows', 'Linux', 'macOS', 'SaaS']",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2013-06",
+                "name": "CVE-2013-3918",
+                "baseScore": "9.3",
+                "publishedDate": "2013-11",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,243 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "aPT19",
+                    "aPT39",
+                    "Iran"
+                ],
+                "date_start": [
+                    "2012-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "aPT19",
+                    "aPT39",
+                    "Iran"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "spearphishing via service",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "exploit public-facing application",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector6"
+            },
+            {
+                "name": "spearphishing email",
+                "id": "attack_vector7"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector8"
+            },
+            {
+                "name": "spearphishing",
+                "id": "attack_vector9"
+            },
+            {
+                "name": "spearphishing email",
+                "id": "attack_vector10"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector11"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector12"
+            },
+            {
+                "name": "spearphishing",
+                "id": "attack_vector13"
+            },
+            {
+                "name": "spearphishing email",
+                "id": "attack_vector14"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector15"
+            },
+            {
+                "name": "spearphishing",
+                "id": "attack_vector16"
+            },
+            {
+                "name": "spearphishing email",
+                "id": "attack_vector17"
+            },
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector18"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector19"
+            },
+            {
+                "name": "unknown",
+                "id": "attack_vector20"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "unknown",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2017-11882",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2018-0802",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "unknown",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "unknown",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ],
+            [
+                "campaign1",
+                "attack_vector7"
+            ],
+            [
+                "campaign1",
+                "attack_vector8"
+            ],
+            [
+                "campaign1",
+                "attack_vector9"
+            ],
+            [
+                "campaign1",
+                "attack_vector10"
+            ],
+            [
+                "campaign1",
+                "attack_vector11"
+            ],
+            [
+                "campaign1",
+                "attack_vector12"
+            ],
+            [
+                "campaign1",
+                "attack_vector13"
+            ],
+            [
+                "campaign1",
+                "attack_vector14"
+            ],
+            [
+                "campaign1",
+                "attack_vector15"
+            ],
+            [
+                "campaign1",
+                "attack_vector16"
+            ],
+            [
+                "campaign1",
+                "attack_vector17"
+            ],
+            [
+                "campaign1",
+                "attack_vector18"
+            ],
+            [
+                "campaign1",
+                "attack_vector19"
+            ],
+            [
+                "campaign1",
+                "attack_vector20"
+            ]
+        ]
+    }
+}

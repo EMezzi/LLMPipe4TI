@@ -1,0 +1,114 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Leviathan"
+                ],
+                "date_start": [
+                    "2017-09",
+                    "2017-08",
+                    "2014-11",
+                    "2015-02"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Leviathan"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing emails",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "malicious URLs",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "fraudulent lookalike domain",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "compromised email accounts",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "compromised servers",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "malicious attachments",
+                "id": "attack_vector6"
+            },
+            {
+                "name": "social engineering",
+                "id": "attack_vector7"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-8759",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ],
+            [
+                "campaign1",
+                "attack_vector7"
+            ]
+        ]
+    }
+}

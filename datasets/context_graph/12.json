@@ -1,0 +1,179 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "APT37",
+                "description": "APT37 is a suspected North Korean cyber espionage group that has been active since at least 2012",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "North Korea",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2016-4171",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2016-4117",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2013-0808",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2017-0199",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2013-4979",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2018-4878",
+                "id": "vulnerability6"
+            },
+            {
+                "name": "cve-2015-2387",
+                "id": "vulnerability7"
+            },
+            {
+                "name": "cve-2015-2545",
+                "id": "vulnerability8"
+            },
+            {
+                "name": "cve-2015-7645",
+                "id": "vulnerability9"
+            },
+            {
+                "name": "cve-2015-5122",
+                "id": "vulnerability10"
+            },
+            {
+                "name": "cve-2014-8439",
+                "id": "vulnerability11"
+            },
+            {
+                "name": "cve-2016-1019",
+                "id": "vulnerability12"
+            },
+            {
+                "name": "cve-2015-5119",
+                "id": "vulnerability13"
+            },
+            {
+                "name": "cve-2015-2419",
+                "id": "vulnerability14"
+            },
+            {
+                "name": "cve-2015-3105",
+                "id": "vulnerability15"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ],
+            [
+                "APT1",
+                "attack_vector3"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ],
+            [
+                "APT1",
+                "vulnerability7"
+            ],
+            [
+                "APT1",
+                "vulnerability8"
+            ],
+            [
+                "APT1",
+                "vulnerability9"
+            ],
+            [
+                "APT1",
+                "vulnerability10"
+            ],
+            [
+                "APT1",
+                "vulnerability11"
+            ],
+            [
+                "APT1",
+                "vulnerability12"
+            ],
+            [
+                "APT1",
+                "vulnerability13"
+            ],
+            [
+                "APT1",
+                "vulnerability14"
+            ],
+            [
+                "APT1",
+                "vulnerability15"
+            ]
+        ]
+    }
+}

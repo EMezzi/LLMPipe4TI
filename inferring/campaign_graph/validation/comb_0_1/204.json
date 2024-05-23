@@ -1,0 +1,102 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Lazarus",
+                    "Lazarus Group",
+                    "APT38"
+                ],
+                "date_start": [
+                    "2017-03",
+                    "2017-05",
+                    "2017-04",
+                    "2017-02"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Lazarus",
+                    "Lazarus Group",
+                    "APT38"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Stolen Credentials",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "EternalBlue Exploit",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Remote File Copy",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Network Scanning",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "SMB Exploitation",
+                "id": "attack_vector5"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2017-0144",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2017-0145",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ]
+        ]
+    }
+}

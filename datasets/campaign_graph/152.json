@@ -1,0 +1,92 @@
+{
+    "pdf_title": [
+        "Op_Dust_Storm_Report.pdf"
+    ],
+    "num_records": 4,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Dust Storm",
+                "date_start": "2012-06",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Dust Storm",
+                "description": "Dust Storm is a threat group that has targeted multiple industries in Japan, South Korea, the United States, Europe, and several Southeast Asian countries.",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "None",
+                "name": "Spearphishing Attachment",
+                "remote": "None",
+                "network": "None",
+                "platforms": "['Windows', 'macOS', 'Linux']",
+                "tactic": "initial-access",
+                "id": "attack_vector1"
+            },
+            {
+                "bypass": "None",
+                "effective_permissions": "None",
+                "permissions": "['User']",
+                "name": "Drive-by Compromise",
+                "remote": "None",
+                "tactic": "initial-access",
+                "network": "None",
+                "platforms": "['Windows', 'Linux', 'macOS', 'SaaS']",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "reservedDate": "2012-03",
+                "name": "CVE-2012-1889",
+                "baseScore": "9.3",
+                "publishedDate": "2012-06",
+                "id": "vulnerability1"
+            },
+            {
+                "reservedDate": "2011-01",
+                "name": "CVE-2011-0611",
+                "baseScore": "9.3",
+                "publishedDate": "2011-04",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

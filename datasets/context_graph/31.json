@@ -1,0 +1,49 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "Equation",
+                "description": "The Equation group is a highly sophisticated threat actor that has been engaged in multiple CNE (computer network exploitation) operations dating back to 2001, and perhaps as early as 1996",
+                "labels": "nation-state",
+                "goals": "sabotage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "USA",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": [
+            {
+                "name": "cve-2009-1123",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2010-2568",
+                "id": "vulnerability2"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ]
+        ]
+    }
+}

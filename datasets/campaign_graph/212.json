@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "RASPITE | Dragos.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Leafminer",
+                "date_start": "2017-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Leafminer",
+                "description": "Leafminer is targeting a broad list of government organizations and business verticals in various regions in the Middle East since at least early 2017",
+                "labels": "crime-syndicate",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

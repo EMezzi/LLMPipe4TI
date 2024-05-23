@@ -1,0 +1,86 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6648726761341095
+            ],
+            "false positives": {},
+            "total_sim": 0.6648726761341095
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.329745352268219
+            ],
+            "false positives": {},
+            "total_sim": 0.329745352268219
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.7584385275840759
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Social engineering techniques",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.7584385275840759
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2020-8794",
+                    "id": "vulnerability1"
+                },
+                "vulnerability2": {
+                    "name": "CVE-2020-1938",
+                    "id": "vulnerability2"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.49730901420116425
+            ],
+            "false positives": {},
+            "total_sim": 0.49730901420116425
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                "targets2": [
+                    "campaign1",
+                    "vulnerability2"
+                ]
+            }
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.7116556018590927
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.7116556018590927
+        }
+    }
+}

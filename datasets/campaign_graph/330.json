@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "bayer points finger at wicked panda in cyberattack _ business_ economy and finance news from a german perspective _ dw _ 04.04.2019.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Winnti Group",
+                "date_start": "2018-02",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Winnti Group",
+                "description": "Winnti Group is a threat group with Chinese origins that has been active since at least 2010. The group has heavily targeted the gaming industry, but it has also expanded the scope of its targeting",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

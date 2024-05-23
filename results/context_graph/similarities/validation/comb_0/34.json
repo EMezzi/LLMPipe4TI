@@ -1,0 +1,86 @@
+{
+    "nodes_similarities": {
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.000000238418579
+            ],
+            "false positives": {},
+            "total_sim": 1.000000238418579
+        },
+        "country": {
+            "country1": [
+                "country1",
+                0.28709614276885986
+            ],
+            "false positives": {},
+            "total_sim": 0.28709614276885986
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.3979826271533966
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Remote Desktop Protocol",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.3979826271533966
+        },
+        "vulnerability": {
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2019-0708",
+                    "id": "vulnerability1"
+                },
+                "vulnerability2": {
+                    "name": "CVE-2017-0143",
+                    "id": "vulnerability2"
+                }
+            }
+        }
+    },
+    "relations_similarities": {
+        "origin": {
+            "origin1": [
+                [
+                    "APT1",
+                    "country1"
+                ],
+                0.6435481905937195
+            ],
+            "false positives": {},
+            "total_sim": 0.6435481905937195
+        },
+        "uses": {
+            "uses1": [
+                [
+                    "APT1",
+                    "attack_vector2"
+                ],
+                0.6989914327859879
+            ],
+            "false positives": {
+                "uses1": [
+                    "APT1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.6989914327859879
+        },
+        "targets": {
+            "false positives": {
+                "targets1": [
+                    "APT1",
+                    "vulnerability1"
+                ],
+                "targets2": [
+                    "APT1",
+                    "vulnerability2"
+                ]
+            }
+        }
+    }
+}

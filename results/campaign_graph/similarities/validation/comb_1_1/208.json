@@ -1,0 +1,64 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.9510544240474701
+            ],
+            "false positives": {},
+            "total_sim": 0.9510544240474701
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.9021088480949402
+            ],
+            "false positives": {},
+            "total_sim": 0.9021088480949402
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.6931831240653992
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Trojanized cryptocurrency trading application",
+                    "id": "attack_vector2"
+                }
+            },
+            "total_sim": 0.6931831240653992
+        },
+        "vulnerability": "No ground truth and no false positives"
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.9265816360712051
+            ],
+            "false positives": {},
+            "total_sim": 0.9265816360712051
+        },
+        "targets": "No relations to pair and no false positives",
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.8221187740564346
+            ],
+            "false positives": {
+                "employs2": [
+                    "campaign1",
+                    "attack_vector2"
+                ]
+            },
+            "total_sim": 0.8221187740564346
+        }
+    }
+}

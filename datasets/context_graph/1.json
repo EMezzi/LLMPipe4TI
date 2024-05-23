@@ -1,0 +1,99 @@
+{
+    "nodes": {
+        "APT": [
+            {
+                "name": "APT12",
+                "description": "Numbered Panda has targeted a variety of victims including but not limited to media outlets, high-tech companies, and multiple governments",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "country": [
+            {
+                "name": "China",
+                "id": "country1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "drive-by compromise",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2011-0609",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "cve-2016-0189",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "cve-2015-0116",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "cve-2013-5990",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "cve-2012-0158",
+                "id": "vulnerability5"
+            },
+            {
+                "name": "cve-2011-0611",
+                "id": "vulnerability6"
+            }
+        ]
+    },
+    "relations": {
+        "origin": [
+            [
+                "APT1",
+                "country1"
+            ]
+        ],
+        "uses": [
+            [
+                "APT1",
+                "attack_vector1"
+            ],
+            [
+                "APT1",
+                "attack_vector2"
+            ]
+        ],
+        "targets": [
+            [
+                "APT1",
+                "vulnerability1"
+            ],
+            [
+                "APT1",
+                "vulnerability2"
+            ],
+            [
+                "APT1",
+                "vulnerability3"
+            ],
+            [
+                "APT1",
+                "vulnerability4"
+            ],
+            [
+                "APT1",
+                "vulnerability5"
+            ],
+            [
+                "APT1",
+                "vulnerability6"
+            ]
+        ]
+    }
+}

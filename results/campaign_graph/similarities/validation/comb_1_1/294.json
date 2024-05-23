@@ -1,0 +1,71 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6893165409564972
+            ],
+            "false positives": {},
+            "total_sim": 0.6893165409564972
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.3786330819129944
+            ],
+            "false positives": {},
+            "total_sim": 0.3786330819129944
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.32390299439430237
+            ],
+            "false positives": {},
+            "total_sim": 0.32390299439430237
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5339748114347458
+            ],
+            "false positives": {},
+            "total_sim": 0.5339748114347458
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.8446582704782486
+            ],
+            "false positives": {},
+            "total_sim": 0.8446582704782486
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector1"
+                ],
+                0.5066097676753998
+            ],
+            "false positives": {},
+            "total_sim": 0.5066097676753998
+        }
+    }
+}

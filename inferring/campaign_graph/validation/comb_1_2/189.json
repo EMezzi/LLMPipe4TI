@@ -1,0 +1,115 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Ke3chang"
+                ],
+                "date_start": [
+                    "2010-08",
+                    "2013-08",
+                    "2013-09",
+                    "2013-07",
+                    "2012-08"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Ke3chang"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "phishing emails with malware attachment",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "phishing emails with link to malicious download",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "leverage of Java zero-day vulnerability (CVE-2012-4681)",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "reliable exploits for Microsoft Word (CVE-2010-3333)",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "reliable exploits for Adobe PDF Reader (CVE-2010-2883)",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "use of Windows screensaver files (.scr) and executable files (.exe) using the Unicode Right-To-Left-Override (RTLO) technique",
+                "id": "attack_vector6"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2012-4681",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2010-3333",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2010-2883",
+                "id": "vulnerability3"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ]
+        ]
+    }
+}

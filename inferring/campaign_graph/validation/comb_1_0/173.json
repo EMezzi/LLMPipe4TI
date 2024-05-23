@@ -1,0 +1,104 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Kaspersky Lab researchers"
+                ],
+                "date_start": [
+                    "2015-02",
+                    "2014-12"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "GCMAN"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Reconnaissance",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Social engineering",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Lateral movement",
+                "id": "attack_vector3"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2015-1701",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2014-4116",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2015-1695",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2015-1641",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "CVE-2013-3660",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ]
+        ]
+    }
+}

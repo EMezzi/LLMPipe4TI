@@ -1,0 +1,106 @@
+{
+    "nodes": {
+        "server": [
+            {
+                "name": "ta1-pivot-2",
+                "id": "server1"
+            }
+        ],
+        "victim": [
+            {
+                "name": "target",
+                "id": "victim1"
+            }
+        ],
+        "related file": [
+            {
+                "name": "load_helper",
+                "id": "file1"
+            },
+            {
+                "name": "elevate",
+                "id": "file2"
+            },
+            {
+                "name": "passwd",
+                "id": "file3"
+            },
+            {
+                "name": "shadow",
+                "id": "file4"
+            },
+            {
+                "name": "Documents",
+                "id": "file5"
+            }
+        ],
+        "threat actor": [],
+        "tool": [
+            {
+                "name": "SSH",
+                "id": "tool1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "Privilege Escalation",
+                "id": "vuln1"
+            },
+            {
+                "name": "Stolen Credentials",
+                "id": "vuln2"
+            }
+        ]
+    },
+    "connections": [
+        {
+            "server": "ta1-pivot-2",
+            "connection": "connected via",
+            "victim": "target"
+        },
+        {
+            "server": "ta1-pivot-2",
+            "connection": "copied files via",
+            "related file": "load_helper"
+        },
+        {
+            "server": "ta1-pivot-2",
+            "connection": "copied files via",
+            "related file": "elevate"
+        },
+        {
+            "tool": "SSH",
+            "connection": "used to connect to",
+            "victim": "target"
+        },
+        {
+            "vulnerability": "gain root privileges",
+            "connection": "used to"
+        },
+        {
+            "threat actor": "Stolen Credentials",
+            "connection": "used to",
+            "tool": "SSH"
+        },
+        {
+            "threat actor": "Stolen Credentials",
+            "connection": "used to",
+            "vulnerability": "gain root privileges"
+        },
+        {
+            "threat actor": "Stolen Credentials",
+            "connection": "used to",
+            "related file": "passwd"
+        },
+        {
+            "threat actor": "Stolen Credentials",
+            "connection": "used to",
+            "related file": "shadow"
+        },
+        {
+            "threat actor": "Stolen Credentials",
+            "connection": "used to",
+            "related file": "Documents"
+        }
+    ]
+}

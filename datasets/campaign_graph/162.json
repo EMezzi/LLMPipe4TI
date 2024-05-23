@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "new global cyber attack on point of sale systems.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "FIN6",
+                "date_start": "2019-01",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "FIN6",
+                "description": "FIN6 is a cybercrime group that has stolen payment card data and sold it for profit on underground marketplaces",
+                "goals": "financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

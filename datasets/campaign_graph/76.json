@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "north korean hackers infiltrate chile_s atm network after skype job interview _ zdnet.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT38",
+                "date_start": "2018-12",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT38",
+                "description": "APT 38 concentrates on stealing money",
+                "labels": "nation-state",
+                "goals": "financial gain",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "pdf_title": [
+        "talos blog __ cisco talos intelligence group - comprehensive threat intelligence_ korea in the crosshairs.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "APT37",
+                "date_start": "2016-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "APT37",
+                "description": "APT37 is a suspected North Korean cyber espionage group that has been active since at least 2012",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "cve-2013-0808",
+                "id": "vulnerability1"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

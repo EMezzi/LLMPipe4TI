@@ -1,0 +1,37 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Molerats"
+                ],
+                "date_start": [
+                    "2016-04",
+                    "2015-05",
+                    "2016-01"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Molerats"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": []
+    }
+}

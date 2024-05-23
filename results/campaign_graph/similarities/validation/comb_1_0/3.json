@@ -1,0 +1,81 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.6723158657550812
+            ],
+            "false positives": {},
+            "total_sim": 0.6723158657550812
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.40078550577163696
+            ],
+            "false positives": {},
+            "total_sim": 0.40078550577163696
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.577306866645813
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Adobe Flash Player ZeroDay",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.577306866645813
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5365506857633591
+            ],
+            "false positives": {},
+            "total_sim": 0.5365506857633591
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.8361579328775406
+            ],
+            "false positives": {},
+            "total_sim": 0.8361579328775406
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.6248113662004471
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.6248113662004471
+        }
+    }
+}

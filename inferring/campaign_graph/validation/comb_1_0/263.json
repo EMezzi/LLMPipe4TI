@@ -1,0 +1,90 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "ScarCruft",
+                    "APT37"
+                ],
+                "date_start": [
+                    "2016-08",
+                    "2015-03"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "ScarCruft",
+                    "APT37"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "Crafted Microsoft Word documents",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Adobe Flash Player exploit",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2016-4117",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2015-2545",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2015-1641",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2012-0158",
+                "id": "vulnerability4"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

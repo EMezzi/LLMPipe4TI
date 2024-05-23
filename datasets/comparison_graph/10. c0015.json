@@ -1,0 +1,39 @@
+{
+  "title": "10. c0015",
+  "url": "https://thedfirreport.com/2021/11/29/continuing-the-bazar-ransomware-story/",
+  "text": "Once they had access to the remote server via the Cobalt Strike beacon, they re-ran Invoke-ShareFinder and then exfiltrated data of interest from a different server using the Rclone application via the MEGA cloud storage service. On the second day, the threat actors used RDP to access the backup server and in doing so, reviewed the backup settings, and running processes on the server via the taskmanager GUI. On day four, the threat actors returned and ran another round of ex-filtration using Rclone and MEGA again. On the fifth day, they moved fast towards their final objective, which was Conti ransomware. Before executing Conti, they used RDP to install and configure the AnyDesk remote desktop application. Having GUI access, they attempted to use ProcessHacker to dump the LSASS process. After this last step, they deployed Conti ransomware via a batch script to all domain joined systems. One interesting fact about this case is that the threat actors were not seen interacting with the Domain Controllers (DCs). Most ransomware cases we see involve the threat actor executing code on the DCs",
+  "val_meta": {
+    "server": [
+      "MEGA cloud storage service"
+    ],
+    "victim": [],
+    "related_file": [
+      "LSASS process"
+    ],
+    "threat_actor": [],
+    "tool": [
+      "Cobalt Strike beacon",
+      "Invoke-ShareFinder",
+      "Conti ransomware",
+      "ProcessHacker",
+      "RDP",
+      "AnyDesk",
+      "LSASS",
+      "Rclone"
+    ],
+    "vulnerability": []
+  },
+  "val_triples": [
+    "(ProcessHacker, generates, LSASS process)",
+    "(10. c0015, has_related_file, LSASS process)",
+    "(10. c0015, has_server, MEGA cloud storage service)",
+    "(10. c0015, uses, Cobalt Strike beacon)",
+    "(10. c0015, uses, Invoke-ShareFinder)",
+    "(10. c0015, uses, Conti ransomware)",
+    "(10. c0015, uses, ProcessHacker)",
+    "(10. c0015, uses, RDP)",
+    "(10. c0015, uses, AnyDesk)",
+    "(10. c0015, uses, LSASS)",
+    "(10. c0015, uses, Rclone)"
+  ]
+}

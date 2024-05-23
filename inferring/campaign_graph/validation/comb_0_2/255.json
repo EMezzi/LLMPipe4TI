@@ -1,0 +1,168 @@
+{
+    "nodes": {
+        "campaign": [
+            {
+                "actor": [
+                    "Patchwork"
+                ],
+                "date_start": [
+                    "2017-01",
+                    "2017-11"
+                ],
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": [
+                    "Patchwork"
+                ],
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spear-phishing emails",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "Website Redirects",
+                "id": "attack_vector2"
+            },
+            {
+                "name": "Direct Links",
+                "id": "attack_vector3"
+            },
+            {
+                "name": "Malicious Attachments",
+                "id": "attack_vector4"
+            },
+            {
+                "name": "Mail Sending Method",
+                "id": "attack_vector5"
+            },
+            {
+                "name": "Drive-by Download",
+                "id": "attack_vector6"
+            },
+            {
+                "name": "Phishing",
+                "id": "attack_vector7"
+            },
+            {
+                "name": "Social Engineering and Weaponized Documents",
+                "id": "attack_vector8"
+            },
+            {
+                "name": "Downloaders",
+                "id": "attack_vector9"
+            },
+            {
+                "name": "Simple Downloaders",
+                "id": "attack_vector10"
+            },
+            {
+                "name": "DDE Downloader",
+                "id": "attack_vector11"
+            }
+        ],
+        "vulnerability": [
+            {
+                "name": "CVE-2012-1856",
+                "id": "vulnerability1"
+            },
+            {
+                "name": "CVE-2014-4114",
+                "id": "vulnerability2"
+            },
+            {
+                "name": "CVE-2017-0199",
+                "id": "vulnerability3"
+            },
+            {
+                "name": "CVE-2017-8570",
+                "id": "vulnerability4"
+            },
+            {
+                "name": "CVE-2015-1641",
+                "id": "vulnerability5"
+            }
+        ]
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [
+            [
+                "campaign1",
+                "vulnerability1"
+            ],
+            [
+                "campaign1",
+                "vulnerability2"
+            ],
+            [
+                "campaign1",
+                "vulnerability3"
+            ],
+            [
+                "campaign1",
+                "vulnerability4"
+            ],
+            [
+                "campaign1",
+                "vulnerability5"
+            ]
+        ],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ],
+            [
+                "campaign1",
+                "attack_vector3"
+            ],
+            [
+                "campaign1",
+                "attack_vector4"
+            ],
+            [
+                "campaign1",
+                "attack_vector5"
+            ],
+            [
+                "campaign1",
+                "attack_vector6"
+            ],
+            [
+                "campaign1",
+                "attack_vector7"
+            ],
+            [
+                "campaign1",
+                "attack_vector8"
+            ],
+            [
+                "campaign1",
+                "attack_vector9"
+            ],
+            [
+                "campaign1",
+                "attack_vector10"
+            ],
+            [
+                "campaign1",
+                "attack_vector11"
+            ]
+        ]
+    }
+}

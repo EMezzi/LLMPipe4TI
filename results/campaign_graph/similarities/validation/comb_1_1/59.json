@@ -1,0 +1,60 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.5000001192092896
+            ],
+            "false positives": {},
+            "total_sim": 0.5000001192092896
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.5437710285186768
+            ],
+            "false positives": {},
+            "total_sim": 0.5437710285186768
+        },
+        "attack_vector": {},
+        "vulnerability": {
+            "vulnerability1": [],
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2018-4878",
+                    "id": "vulnerability1"
+                }
+            },
+            "total_sim": 0.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.5218855738639832
+            ],
+            "false positives": {},
+            "total_sim": 0.5218855738639832
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.2500000596046448
+            ],
+            "false positives": {},
+            "total_sim": 0.2500000596046448
+        },
+        "employs": {
+            "employs1": [],
+            "false positives": {},
+            "total_sim": 0.0
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "Operation Lotus Blossom - A New Nation-State Cyberthreat?.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Lotus Blossom",
+                "date_start": "2012-06",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Lotus Blossom",
+                "description": "Lotus Blossom is a long running APT actor that operates on a massive scale. The group has been running campaigns, mostly in countries and territories around the South China Sea",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing attachment",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

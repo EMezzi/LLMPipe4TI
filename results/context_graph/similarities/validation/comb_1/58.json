@@ -1,0 +1,100 @@
+{
+    "nodes_similarities": {
+        "APT": {
+            "APT1": [
+                "APT1",
+                1.0
+            ],
+            "false positives": {},
+            "total_sim": 1.0
+        },
+        "country": {
+            "country1": [
+                "country1",
+                0.3033183515071869
+            ],
+            "false positives": {},
+            "total_sim": 0.3033183515071869
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector1",
+                0.6125044226646423
+            ],
+            "false positives": {
+                "attack_vector2": {
+                    "name": "Exploitation for Privilege Escalation",
+                    "id": "attack_vector2"
+                },
+                "attack_vector3": {
+                    "name": "Remote Services",
+                    "id": "attack_vector3"
+                }
+            },
+            "total_sim": 0.6125044226646423
+        },
+        "vulnerability": {
+            "vulnerability1": [],
+            "false positives": {
+                "vulnerability1": {
+                    "name": "CVE-2017-0199",
+                    "id": "vulnerability1"
+                },
+                "vulnerability2": {
+                    "name": "CVE-2017-8570",
+                    "id": "vulnerability2"
+                }
+            },
+            "total_sim": 0.0
+        }
+    },
+    "relations_similarities": {
+        "origin": {
+            "origin1": [
+                [
+                    "APT1",
+                    "country1"
+                ],
+                0.6516591757535934
+            ],
+            "false positives": {},
+            "total_sim": 0.6516591757535934
+        },
+        "uses": {
+            "uses1": [
+                [
+                    "APT1",
+                    "attack_vector1"
+                ],
+                0.8062522113323212
+            ],
+            "false positives": {
+                "uses2": [
+                    "APT1",
+                    "attack_vector2"
+                ],
+                "uses3": [
+                    "APT1",
+                    "attack_vector3"
+                ]
+            },
+            "total_sim": 0.8062522113323212
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "APT1",
+                    "vulnerability1"
+                ],
+                0.5
+            ],
+            "false positives": {
+                "targets2": [
+                    "APT1",
+                    "vulnerability2"
+                ]
+            },
+            "total_sim": 0.5
+        }
+    }
+}

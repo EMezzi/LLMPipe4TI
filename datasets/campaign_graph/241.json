@@ -1,0 +1,54 @@
+{
+    "pdf_title": [
+        "McAfee_NightDragon_wp_draft_to_customersv1-1.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "Night Dragon",
+                "date_start": "2009-11",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "Night Dragon",
+                "description": "Night Dragon is a campaign name for activity involving a threat group that has conducted activity originating primarily in China.",
+                "labels": "nation-state",
+                "goals": "espionage",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "spearphishing link",
+                "id": "attack_vector1"
+            },
+            {
+                "name": "exploit public-facing application ",
+                "id": "attack_vector2"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ],
+            [
+                "campaign1",
+                "attack_vector2"
+            ]
+        ]
+    }
+}

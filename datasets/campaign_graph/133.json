@@ -1,0 +1,46 @@
+{
+    "pdf_title": [
+        "third-party software was entry point for background-check system hack - nextgov.pdf"
+    ],
+    "num_records": 1,
+    "nodes": {
+        "campaign": [
+            {
+                "actor": "unknown",
+                "date_start": "2014-08",
+                "id": "campaign1"
+            }
+        ],
+        "APT": [
+            {
+                "name": "unknown",
+                "description": "Deep Panda is a suspected Chinese threat group known to target many industries, including government, defense, financial, and telecommunications",
+                "goals": "espionage,financial gain",
+                "labels": "crime-syndicate",
+                "id": "APT1"
+            }
+        ],
+        "attack_vector": [
+            {
+                "name": "unknown",
+                "id": "attack_vector1"
+            }
+        ],
+        "vulnerability": []
+    },
+    "relations": {
+        "attributed_to": [
+            [
+                "campaign1",
+                "APT1"
+            ]
+        ],
+        "targets": [],
+        "employs": [
+            [
+                "campaign1",
+                "attack_vector1"
+            ]
+        ]
+    }
+}

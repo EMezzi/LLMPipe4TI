@@ -1,0 +1,107 @@
+{
+    "nodes_similarities": {
+        "campaign": {
+            "campaign1": [
+                "campaign1",
+                0.15170353651046753
+            ],
+            "false positives": {},
+            "total_sim": 0.15170353651046753
+        },
+        "APT": {
+            "APT1": [
+                "APT1",
+                0.30340707302093506
+            ],
+            "false positives": {},
+            "total_sim": 0.30340707302093506
+        },
+        "attack_vector": {
+            "attack_vector1": [
+                "attack_vector2",
+                0.6258712410926819
+            ],
+            "false positives": {
+                "attack_vector1": {
+                    "name": "Poisoned Microsoft Office documents",
+                    "id": "attack_vector1"
+                }
+            },
+            "total_sim": 0.6258712410926819
+        },
+        "vulnerability": {
+            "vulnerability1": [
+                "vulnerability1",
+                1
+            ],
+            "false positives": {
+                "vulnerability2": {
+                    "name": "CVE-2017-0199",
+                    "id": "vulnerability2"
+                },
+                "vulnerability3": {
+                    "name": "CVE-2017-8759",
+                    "id": "vulnerability3"
+                },
+                "vulnerability4": {
+                    "name": "CVE-2018-0802",
+                    "id": "vulnerability4"
+                }
+            },
+            "total_sim": 1.0
+        }
+    },
+    "relations_similarities": {
+        "attributed_to": {
+            "attributed_to1": [
+                [
+                    "campaign1",
+                    "APT1"
+                ],
+                0.2275553047657013
+            ],
+            "false positives": {},
+            "total_sim": 0.2275553047657013
+        },
+        "targets": {
+            "targets1": [
+                [
+                    "campaign1",
+                    "vulnerability1"
+                ],
+                0.5758517682552338
+            ],
+            "false positives": {
+                "targets2": [
+                    "campaign1",
+                    "vulnerability2"
+                ],
+                "targets3": [
+                    "campaign1",
+                    "vulnerability3"
+                ],
+                "targets4": [
+                    "campaign1",
+                    "vulnerability4"
+                ]
+            },
+            "total_sim": 0.5758517682552338
+        },
+        "employs": {
+            "employs1": [
+                [
+                    "campaign1",
+                    "attack_vector2"
+                ],
+                0.3887873888015747
+            ],
+            "false positives": {
+                "employs1": [
+                    "campaign1",
+                    "attack_vector1"
+                ]
+            },
+            "total_sim": 0.3887873888015747
+        }
+    }
+}
