@@ -54,8 +54,9 @@ grid_search = {'temperature': [0, 1],
                                          - It is possible to have more than one attack vector. 
                                          - Each node will have an id, composed by the acronym of the node and the number of the entity.
                                          - If you do not find the name of the attack vector or the vulnerability, do not create the dictionary in the belonging list.
-
-                                   Step 2 - Return the information filling this json format: 
+                                         
+                                   Step 2 - Extract the relations between the entities gathered. 
+                                   Step 3 - Return the information filling in this JSON format:   
 
                                             "nodes": {
                                                 "campaign": [
@@ -92,6 +93,30 @@ grid_search = {'temperature': [0, 1],
                                                     }
                                                 ]
                                             }
+                                            "relations": {
+                                                 "attributed_to": [
+                                                     [
+                                                         "campaign1",
+                                                         "APT1"
+                                                     ]
+                                                 ],
+                                                 "targets": [
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability1"
+                                                     ],
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability2"
+                                                     ]
+                                                 ],
+                                                 "employs": [
+                                                     [
+                                                         "campaign1",
+                                                         "attack_vector1"
+                                                     ]
+                                                 ]
+                                            }
                                    """,
 
                            """You are a Cyber Threat Analyst. Use the following step-by-step guide to extract information from cyber threat reports. 
@@ -112,7 +137,9 @@ grid_search = {'temperature': [0, 1],
                                         "In the case of Operation Daybreak, the hacked website hosting the exploit kit performs a couple of browser checks before redirecting the visitor to a server controlled by the attackers hosted in Poland." -> drive-by compromise
 
 
-                                   Step 2 - Return the information filling this json format: 
+                                   Step 2 - Extract the relations between the entities gathered. 
+                                   
+                                   Step 3 - Return the information filling in this JSON format:  
 
                                             "nodes": {
                                                 "campaign": [
@@ -148,6 +175,30 @@ grid_search = {'temperature': [0, 1],
                                                         "id": "vulnerability2" // id of the vulnerability
                                                     }
                                                 ]
+                                            }
+                                            "relations": {
+                                                 "attributed_to": [
+                                                     [
+                                                         "campaign1",
+                                                         "APT1"
+                                                     ]
+                                                 ],
+                                                 "targets": [
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability1"
+                                                     ],
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability2"
+                                                     ]
+                                                 ],
+                                                 "employs": [
+                                                     [
+                                                         "campaign1",
+                                                         "attack_vector1"
+                                                     ]
+                                                 ]
                                             }
                            """,
                            """You are a Cyber Threat Analyst. Use the following step-by-step guide to extract information from cyber threat reports. 
@@ -172,9 +223,10 @@ grid_search = {'temperature': [0, 1],
                                                 "has been linked to a watering hole attack" -> drive-by compromise.
                                                 "Initial Access External Remote Services" -> external remote services.
                                                 "employed legitimate user credentials to access its targets' networks." -> valid accounts. 
-
-
-                                   Step 2 - Return the information filling in this JSON format: 
+                                                
+                                   Step 2 - Extract the relations between the entities gathered. 
+                                   
+                                   Step 3 - Return the information filling in this JSON format: 
 
                                             "nodes": {
                                                 "campaign": [
@@ -210,6 +262,30 @@ grid_search = {'temperature': [0, 1],
                                                        "id": "vulnerability2" // id of the vulnerability
                                                    }
                                                ]
+                                            }
+                                            "relations": {
+                                                 "attributed_to": [
+                                                     [
+                                                         "campaign1",
+                                                         "APT1"
+                                                     ]
+                                                 ],
+                                                 "targets": [
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability1"
+                                                     ],
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability2"
+                                                     ]
+                                                 ],
+                                                 "employs": [
+                                                     [
+                                                         "campaign1",
+                                                         "attack_vector1"
+                                                     ]
+                                                 ]
                                             }
                            """
                            ]}
