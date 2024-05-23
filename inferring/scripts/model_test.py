@@ -97,9 +97,11 @@ if __name__ == '__main__':
 
         prompt += s
 
-        s = "\n\nStep 2 - Return the connections between the entities that you found, in this format (entity1, connection, entity2)"
+        s = "\n\nStep 2 - Return the connections between the entities that you found, in this format (entity1, connection, entity2). \n"
+        s1 = "\n       - Return the connection between the title of the report and the entities found."
 
         prompt += s
+        prompt += s1
 
         s = "\n\nStep 3 - Return the information filling in this JSON format:\n"
         s += "nodes: {\n"
@@ -123,6 +125,7 @@ if __name__ == '__main__':
 
         print(prompt)
 
+        """
         for temperature in grid_search['temperature']:
             print("Temperature: ", temperature)
             list_d = []
@@ -134,4 +137,4 @@ if __name__ == '__main__':
                     title = json_object['title']
                     if answer:
                         GraphExtractor.save_json(f'/Users/manu/PycharmProjects/LlmTI/inferring/comparison_graph/composed/comb_{temperature}/{title}.json', answer.content)
-
+        """
