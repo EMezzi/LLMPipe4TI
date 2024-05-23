@@ -40,6 +40,30 @@ grid_search = {'temperature': [0, 1],
                                                 }
                                             ]
                                       }
+                                      "relations": {
+                                                 "attributed_to": [
+                                                     [
+                                                         "campaign1",
+                                                         "APT1"
+                                                     ]
+                                                 ],
+                                                 "targets": [
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability1"
+                                                     ],
+                                                     [
+                                                         "campaign1",
+                                                         "vulnerability2"
+                                                     ]
+                                                 ],
+                                                 "employs": [
+                                                     [
+                                                         "campaign1",
+                                                         "attack_vector1"
+                                                     ]
+                                                 ]
+                                      }
                            """,
 
                            """You are a Cyber Threat Analyst. Use the following step-by-step guide to extract information from cyber threat reports. 
