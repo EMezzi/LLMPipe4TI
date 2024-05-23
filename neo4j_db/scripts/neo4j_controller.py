@@ -1,6 +1,5 @@
 # this script loads the CSV files to create nodes and relationships.
 # This type of cypher query works for small files only. Use PERIODIC commit if necessary
-# @author: Giorgio Di Tizio - giorgio.ditizio@unitn.it
 
 from neo4j import GraphDatabase
 
