@@ -1,5 +1,4 @@
 # this script sets the Neo4j DB with the data about the APT attacks
-# @author: Giorgio Di Tizio - giorgio.ditizio@unitn.it
 
 from neo4j_controller import Neo4j_Controller
 import time
